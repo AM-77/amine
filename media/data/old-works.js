@@ -39,7 +39,7 @@ const old_works = [
       "Source Code": "https://github.com/AM-77/HTLM5-Templates/tree/master/Sooner",
       "Link": "https://sooner.medamine.now.sh/"
     },
-    "tags": ["HTML", "CSS", "JavaScript"]
+    "tags": ["Template"]
   },
   {
     "title": "Amir",
@@ -48,7 +48,7 @@ const old_works = [
       "Source Code": "https://github.com/AM-77/HTLM5-Templates/tree/master/Amir",
       "Link": "https://amir.am77.now.sh/"
     },
-    "tags": ["HTML", "CSS", "JavaScript"]
+    "tags": ["Template"]
   },
   {
     "title": "Bread Co.",
@@ -57,7 +57,7 @@ const old_works = [
       "Source Code": "https://github.com/AM-77/HTLM5-Templates/tree/master/Bread Co.",
       "Link": "https://bread-co.am77.now.sh/"
     },
-    "tags": ["HTML", "CSS", "JavaScript", "Materialize"]
+    "tags": ["Template", "Materialize"]
   },
   {
     "title": "webrtc-chat",
@@ -65,7 +65,16 @@ const old_works = [
     "links": {
       "Source Code": "https://github.com/AM-77/webrtc-chat"
     },
-    "tags": ["HTML", "CSS", "JavaScript"]
+    "tags": ["Template"]
+  },
+  {
+    "title": "Numix Project",
+    "desc": "Recreated the official website for the Numix Project.",
+    "links": {
+      "Source Code": "https://github.com/AM-77/HTML5-Templates/tree/master/numixproject",
+      "Link": "https://numixproject.vercel.app"
+    },
+    "tags": ["Template"]
   },
   {
     "title": "University Ibn Khaldoun Community",
@@ -74,6 +83,6 @@ const old_works = [
       "Source Code": "https://github.com/AM-77/UIKCommunity.github.io.git",
       "Link": "https://uik-community.vercel.app"
     },
-    "tags": ["HTML", "CSS", "JavaScript"]
+    "tags": ["Template"]
   }
 ]

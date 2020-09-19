@@ -6,7 +6,7 @@ const works = [
       "Source Code": "https://github.com/AM77-Dev/Nyno-UI",
       "Documentation": "https://docs.medamine.now.sh/"
     },
-    "tags": ["CSS", "SCSS"]
+    "tags": ["SCSS"]
   },
   {
     "title": "react-datepickerrz",
@@ -157,16 +157,16 @@ const works = [
       "Source Code": "https://github.com/AM-77/HTML5-Templates/tree/master/Liam",
       "Link": "https://liam-iota.vercel.app"
     },
-    "tags": ["HTML", "CSS", "JavaScript"]
+    "tags": ["Template"]
   },
   {
-    "title": "Numix Project",
-    "desc": "Recreated the official website for the Numix Project.",
+    "title": "Poké-NES",
+    "desc": "Pokédex in a Nintendo style.",
     "links": {
-      "Source Code": "https://github.com/AM-77/HTML5-Templates/tree/master/numixproject",
-      "Link": "https://numixproject.vercel.app"
+      "Source Code": "https://github.com/AM-77/poke-nes",
+      "Link": "https://poke-nes.vercel.app/"
     },
-    "tags": ["HTML", "CSS", "JavaScript"]
+    "tags": ["Template"]
   }
 ]
 
