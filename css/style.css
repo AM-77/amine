@@ -157,59 +157,85 @@ li {
   box-shadow: 0 0 8px -2px var(--html);
 }
 
+.tag.template {
+  background: var(--template);
+  box-shadow: 0 0 8px -2px var(--template);
+}
+
 .filter.javascript {
   color: var(--javascript);
 }
+
 .filter.css {
   color: var(--css);
 }
+
 .filter.typescript {
   color: var(--typescript);
 }
+
 .filter.socketio {
   color: var(--socketio);
 }
+
 .filter.express {
   color: var(--express);
 }
+
 .filter.node {
   color: var(--node);
 }
+
 .filter.react {
   color: var(--react);
 }
+
 .filter.scss {
   color: var(--scss);
 }
+
 .filter.mongodb {
   color: var(--mongodb);
 }
+
 .filter.deno {
   color: var(--deno);
 }
+
 .filter.sqlite3 {
   color: var(--sqlite3);
 }
+
 .filter.mysql {
   color: var(--mysql);
 }
+
 .filter.java {
   color: var(--java);
 }
+
 .filter.springboot {
   color: var(--springboot);
 }
+
 .filter.thymeleaf {
   color: var(--thymeleaf);
 }
+
 .filter.jquery {
   color: var(--jquery);
 }
+
 .filter.materialize {
   color: var(--materialize);
 }
+
 .filter.html {
   color: var(--html);
+}
+
+.filter.template {
+  color: var(--template);
 }
 
 /* animation */
