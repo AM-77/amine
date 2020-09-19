@@ -166,7 +166,7 @@ const works = [
       "Source Code": "https://github.com/AM-77/poke-nes",
       "Link": "https://poke-nes.vercel.app/"
     },
-    "tags": ["Template"]
+    "tags": ["React", "JavaScript"]
   }
 ]
 
