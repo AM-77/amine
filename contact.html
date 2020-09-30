@@ -80,7 +80,8 @@
             </ul>
           </div>
           <div class="form">
-            <form>
+            <form action="https://formspree.io/f/mleodonp" method="POST">
+              <p class="status">this is status</p>
               <div class="input">
                 <label for="name">Name:</label>
                 <input id="name" name="name" required type="text">
@@ -168,6 +169,48 @@
         scale: 0,
         ease: "power3.inOut"
       })
+
+      // Sending email
+
+      const form = document.querySelector("form")
+      const button = document.querySelector("form button")
+      const status = document.querySelector("form .status")
+
+      // Success and Error functions for after the form is submitted
+      function success() {
+        form.reset()
+        status.innerHTML = "Thanks!"
+      }
+
+      function error() {
+        status.innerHTML = "Oops! There was a problem."
+      }
+
+      // handle the form submission event
+      form.addEventListener("submit", function(ev) {
+        ev.preventDefault()
+        const data = new FormData(form)
+        ajax(form.method, form.action, data, success, error)
+      })
+
+      // helper function for sending an AJAX request
+      function ajax(method, url, data, success, error) {
+        const xhr = new XMLHttpRequest()
+        xhr.open(method, url)
+        xhr.setRequestHeader("Accept", "application/json")
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return
+          if (xhr.status === 200) {
+            console.log("ok")
+            success(xhr.response, xhr.responseType)
+          } else {
+            console.log("error")
+            error(xhr.status, xhr.response, xhr.responseType)
+          }
+        }
+        console.log("sending ...")
+        xhr.send(data)
+      }
     })
   </script>
 </body>
