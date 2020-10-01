@@ -143,7 +143,7 @@
         <div class="title"><h1>${work.title}</h1></div>
         <div class="infos"><p>${work.desc}</p></div>
         <div class="links">${Object.keys(work.links).map(link =>`<a class="work-link" href="${work.links[link]}" alt="${link}">${link}</a>`).join(" ")}</div>
-        <div class="tags">${work.tags.map(tag => `<span class="filter tag ${tag.toLowerCase()}" data-filter=".${tag.toLowerCase()}">${tag}</span>`).join(" ")}</div>
+        <div class="tags">${work.tags.map(tag => `<span class="filter tag ${tag.toLowerCase()}" data-filter=".${tag.toLowerCase()}">${tag}</span>`).join(" ")}<span class="date">${work.date}</span></div>
       </div>`
 
       /* work filter */

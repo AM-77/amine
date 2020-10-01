@@ -5,7 +5,8 @@ const old_works = [
     "links": {
       "Source Code": "https://github.com/AM-77/realestate"
     },
-    "tags": ["Java", "SpringBoot", "MySQL", "thymeleaf"]
+    "tags": ["Java", "SpringBoot", "MySQL", "thymeleaf"],
+    "date": "May/2018"
   },
   {
     "title": "slicarousel",
@@ -14,7 +15,8 @@ const old_works = [
       "Source Code": "https://github.com/AM-77/slicarousel",
       "Demo": "https://slicarousel.medamine.now.sh/"
     },
-    "tags": ["JavaScript", "jQuery"]
+    "tags": ["JavaScript", "jQuery"],
+    "date": "Oct/2018"
   },
   {
     "title": "dark-github-theme",
@@ -22,7 +24,8 @@ const old_works = [
     "links": {
       "Source Code": "https://github.com/AM-77/dark-github-theme"
     },
-    "tags": ["CSS"]
+    "tags": ["CSS"],
+    "date": "Oct/2019"
   },
   {
     "title": "form-validator.js",
@@ -30,7 +33,8 @@ const old_works = [
     "links": {
       "Source Code": "https://github.com/AM-77/form-validator.js"
     },
-    "tags": ["JavaScript"]
+    "tags": ["JavaScript"],
+    "date": "Nov/2019"
   },
   {
     "title": "sooner",
@@ -39,7 +43,8 @@ const old_works = [
       "Source Code": "https://github.com/AM-77/HTLM5-Templates/tree/master/Sooner",
       "Link": "https://sooner.medamine.now.sh/"
     },
-    "tags": ["Template"]
+    "tags": ["Template"],
+    "date": "Sep/2019"
   },
   {
     "title": "Amir",
@@ -48,7 +53,8 @@ const old_works = [
       "Source Code": "https://github.com/AM-77/HTLM5-Templates/tree/master/Amir",
       "Link": "https://amir.am77.now.sh/"
     },
-    "tags": ["Template"]
+    "tags": ["Template"],
+    "date": "Sep/2019"
   },
   {
     "title": "Bread Co.",
@@ -57,7 +63,8 @@ const old_works = [
       "Source Code": "https://github.com/AM-77/HTLM5-Templates/tree/master/Bread Co.",
       "Link": "https://bread-co.am77.now.sh/"
     },
-    "tags": ["Template", "Materialize"]
+    "tags": ["Template", "Materialize"],
+    "date": "Nov/2019"
   },
   {
     "title": "webrtc-chat",
@@ -65,7 +72,8 @@ const old_works = [
     "links": {
       "Source Code": "https://github.com/AM-77/webrtc-chat"
     },
-    "tags": ["Template"]
+    "tags": ["Template"],
+    "date": "Nov/2018"
   },
   {
     "title": "Numix Project",
@@ -74,7 +82,8 @@ const old_works = [
       "Source Code": "https://github.com/AM-77/HTML5-Templates/tree/master/numixproject",
       "Link": "https://numixproject.vercel.app"
     },
-    "tags": ["Template"]
+    "tags": ["Template"],
+    "date": "May/2019"
   },
   {
     "title": "University Ibn Khaldoun Community",
@@ -83,6 +92,7 @@ const old_works = [
       "Source Code": "https://github.com/AM-77/UIKCommunity.github.io.git",
       "Link": "https://uik-community.vercel.app"
     },
-    "tags": ["Template"]
+    "tags": ["Template"],
+    "date": "Aug/2019"
   }
 ]

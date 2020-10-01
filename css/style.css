@@ -843,6 +843,16 @@ footer .wrap .infos .emial .content p {
   cursor: pointer;
 }
 
+.portfolio .gallery .work .tags .date {
+  font-family: 'Link';
+  font-weight: 700;
+  color: var(--light);
+  padding: 4px 6px;
+  font-size: 11px;
+  margin-top: 5px;
+  margin-left: auto;
+}
+
 /* contact */
 
 .contact,

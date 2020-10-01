@@ -6,7 +6,8 @@ const works = [
       "Source Code": "https://github.com/AM77-Dev/Nyno-UI",
       "Documentation": "https://docs.medamine.now.sh/"
     },
-    "tags": ["SCSS"]
+    "tags": ["SCSS"],
+    "date": "May/2019"
   },
   {
     "title": "react-datepickerrz",
@@ -15,7 +16,8 @@ const works = [
       "Source Code": "https://github.com/AM-77/react-datepickerrz",
       "Demo": "https://am-77.github.io/react-datepickerrz/"
     },
-    "tags": ["React", "JavaScript"]
+    "tags": ["React", "JavaScript"],
+    "date": "May/2020"
   },
   {
     "title": "react-coder",
@@ -24,7 +26,8 @@ const works = [
       "Source Code": "https://github.com/AM-77/react-coder",
       "Documentation": "https://am-77.github.io/react-coder/"
     },
-    "tags": ["React", "TypeScript"]
+    "tags": ["React", "TypeScript"],
+    "date": "May/2020"
   },
   {
     "title": "react-floating-buttons",
@@ -33,7 +36,8 @@ const works = [
       "Source Code": "https://github.com/AM-77/react-floating-buttons",
       "Demo": "https://am-77.github.io/react-floating-buttons-demo/"
     },
-    "tags": ["React", "JavaScript"]
+    "tags": ["React", "JavaScript"],
+    "date": "Apr/2020"
   },
   {
     "title": "deno-dotenv",
@@ -42,7 +46,8 @@ const works = [
       "Source Code": "https://github.com/AM-77/deno-dotenv",
       "Article": "https://am77-blog.netlify.app/build-your-own-deno-dotenv/"
     },
-    "tags": ["Deno", "TypeScript"]
+    "tags": ["Deno", "TypeScript"],
+    "date": "Jun/2020"
   },
   {
     "title": "deno-rest-api",
@@ -51,7 +56,8 @@ const works = [
       "Source Code": "https://github.com/AM-77/deno-rest-api",
       "Article": "https://dev.to/am77/deno-v1-0-303j"
     },
-    "tags": ["Deno", "TypeScript"]
+    "tags": ["Deno", "TypeScript"],
+    "date": "May/2020"
   },
   {
     "title": "p-gen",
@@ -60,7 +66,8 @@ const works = [
       "Source Code": "https://github.com/AM-77/p-gen",
       "Demo": "https://p-gen.vercel.app/"
     },
-    "tags": ["JavaScript"]
+    "tags": ["JavaScript"],
+    "date": "Oct/2019"
   },
   {
     "title": "cli-coloring",
@@ -68,16 +75,18 @@ const works = [
     "links": {
       "Source Code": "https://github.com/AM-77/cli-coloring"
     },
-    "tags": ["JavaScript"]
+    "tags": ["JavaScript"],
+    "date": "Sep/2019"
   },
   {
     "title": "dz-communes",
     "desc": "A nodejs module for the list of all of the 48 wilayas of Algeria and their communes.",
     "links": {
       "Source Code": "https://github.com/AM-77/dz-communes",
-      "Demo": "https://dz-communes.herokuapp.com/"
+      "api": "https://dz-communes.herokuapp.com/"
     },
-    "tags": ["JavaScript"]
+    "tags": ["JavaScript"],
+    "date": "May/2020"
   },
   {
     "title": "el-mesa",
@@ -87,7 +96,8 @@ const works = [
       "Server Side": "https://github.com/AM-77/el-mesa-server",
       "Link": "https://el-mesa.netlify.app/"
     },
-    "tags": ["Node", "Express", "SocketIO", "React", "JavaScript"]
+    "tags": ["Node", "Express", "SocketIO", "React", "JavaScript"],
+    "date": "Jun/2020"
   },
   {
     "title": "lil-urls",
@@ -97,7 +107,8 @@ const works = [
       "Server Side": "https://github.com/AM-77/lil-urls-server",
       "Link": "https://lil-urls.vercel.app/"
     },
-    "tags": ["Node", "Express", "SQLite3", "React", "JavaScript"]
+    "tags": ["Node", "Express", "SQLite3", "React", "JavaScript"],
+    "date": "Jul/2020"
   },
   {
     "title": "savednotes",
@@ -105,7 +116,8 @@ const works = [
     "links": {
       "Source Code": "https://github.com/AM-77/savednotes"
     },
-    "tags": ["Node", "Express", "MySQL", "React", "TypeScript"]
+    "tags": ["Node", "Express", "MySQL", "React", "TypeScript"],
+    "date": "Jan/2020"
   },
   {
     "title": "books-exchange (WIP)",
@@ -113,7 +125,8 @@ const works = [
     "links": {
       "Source Code": "https://github.com/AM-77/books-exchange"
     },
-    "tags": ["Node", "Express", "MongoDB", "React", "JavaScript"]
+    "tags": ["Node", "Express", "MongoDB", "React", "JavaScript"],
+    "date": "Jan/2020"
   },
   {
     "title": "SOACC",
@@ -121,7 +134,8 @@ const works = [
     "links": {
       "Source Code": "https://github.com/AM-77/SOACC"
     },
-    "tags": ["Node", "Express", "MongoDB", "React"]
+    "tags": ["Node", "Express", "MongoDB", "React"],
+    "date": "Dec/2019"
   },
   {
     "title": "letra",
@@ -130,7 +144,8 @@ const works = [
       "Source Code": "https://github.com/AM-77/letra",
       "Link": "https://am-77.github.io/letra/#/"
     },
-    "tags": ["Node", "Express", "React", "JavaScript"]
+    "tags": ["Node", "Express", "React", "JavaScript"],
+    "date": "Jul/2020"
   },
   {
     "title": "border-radius-generator",
@@ -139,7 +154,8 @@ const works = [
       "Source Code": "https://github.com/AM-77/border-radius-generator",
       "Link": "https://am-77.github.io/border-radius-generator/"
     },
-    "tags": ["React", "TypeScript"]
+    "tags": ["React", "TypeScript"],
+    "date": "Jun/2020"
   },
   {
     "title": "DET",
@@ -148,7 +164,8 @@ const works = [
       "Source Code": "https://github.com/AM-77/DET",
       "Link": "http://det-distribution.dz"
     },
-    "tags": ["Java", "SpringBoot", "MySQL", "JavaScript"]
+    "tags": ["Java", "SpringBoot", "MySQL", "JavaScript"],
+    "date": "Apr/2020"
   },
   {
     "title": "Liam",
@@ -157,7 +174,8 @@ const works = [
       "Source Code": "https://github.com/AM-77/HTML5-Templates/tree/master/Liam",
       "Link": "https://liam-iota.vercel.app"
     },
-    "tags": ["Template"]
+    "tags": ["Template"],
+    "date": "Aug/2020"
   },
   {
     "title": "Poké-NES",
@@ -166,7 +184,8 @@ const works = [
       "Source Code": "https://github.com/AM-77/poke-nes",
       "Link": "https://poke-nes.vercel.app/"
     },
-    "tags": ["React", "JavaScript"]
+    "tags": ["React", "JavaScript"],
+    "date": "Sep/2020"
   }
 ]
 
