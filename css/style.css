@@ -23,7 +23,7 @@
   --white: #ffffff;
   --dark: #101010;
   --light: #f1f2f3;
-  --theme: #119955; 
+  --theme: #119955;
   --gh: #24292E;
   --li: #0079b7;
   --tw: #1DA1F2;
@@ -31,7 +31,7 @@
   --javascript: #f1e05a;
   --css: #563d7c;
   --typescript: #2b7489;
-  --socketio: #555555; 
+  --socketio: #555555;
   --express: #aeaeae;
   --node: #43853d;
   --react: #61dafb;
@@ -319,7 +319,7 @@ body {
   100% {
     transform: rotate(360deg);
   }
-} 
+}
 
 .loading p {
   font-size: 15px;
@@ -328,7 +328,7 @@ body {
   margin-top: 50px;
 }
 
-body.preloading .wrapper, 
+body.preloading .wrapper,
 body.preloading footer{
   display: none
 }
@@ -502,7 +502,7 @@ footer {
   height: 250px;
   z-index: 1;
   padding: 30px;
-} 
+}
 
 footer .wrap {
   display: flex;
@@ -577,16 +577,16 @@ footer .wrap .infos .media .content .account:before {
 
 footer .wrap .infos .media .content .account.gh:before{
   background-color: var(--gh);
-} 
+}
 footer .wrap .infos .media .content .account.tw:before{
   background-color: var(--tw);
-} 
+}
 footer .wrap .infos .media .content .account.li:before{
   background-color: var(--li);
-} 
+}
 footer .wrap .infos .media .content .account.dt:before{
   background-color: var(--dt);
-} 
+}
 
 footer .wrap .infos .emial {
   text-align: right;
@@ -667,7 +667,8 @@ footer .wrap .infos .emial .content p {
 }
 
 .wrapper .bio .infos .intro p {
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .wrapper .bio .infos .links ul {
@@ -952,7 +953,7 @@ footer .wrap .infos .emial .content p {
   margin-right: 10px;
 }
 
-.contact .main .form .input input, 
+.contact .main .form .input input,
 .contact .main .form .message textarea {
   font-family: 'Abel', 'Roboto Mono', 'Roboto', sans-serif;
   font-size: 18px;
@@ -1005,7 +1006,7 @@ footer .wrap .infos .emial .content p {
   .wrapper {
     padding: 30px 0;
   }
-  
+
   .wrapper header.open,
   .wrapper header.close {
     position: fixed;
@@ -1094,7 +1095,7 @@ footer .wrap .infos .emial .content p {
   footer {
     padding: 0;
   }
-  
+
   footer .wrap .ask {
     justify-content: center
   }
