@@ -40,55 +40,6 @@ const works = [
     "date": "Apr/2020"
   },
   {
-    "title": "deno-dotenv",
-    "desc": "A zero-dependency deno module that loads environment variables from a file.",
-    "links": {
-      "Source Code": "https://github.com/AM-77/deno-dotenv",
-      "Article": "https://am77-blog.netlify.app/build-your-own-deno-dotenv/"
-    },
-    "tags": ["Deno", "TypeScript"],
-    "date": "Jun/2020"
-  },
-  {
-    "title": "deno-rest-api",
-    "desc": "A rest API made with Deno.",
-    "links": {
-      "Source Code": "https://github.com/AM-77/deno-rest-api",
-      "Article": "https://dev.to/am77/deno-v1-0-303j"
-    },
-    "tags": ["Deno", "TypeScript"],
-    "date": "May/2020"
-  },
-  {
-    "title": "p-gen",
-    "desc": "A lightweight, customizable javascript password generator.",
-    "links": {
-      "Source Code": "https://github.com/AM-77/p-gen",
-      "Demo": "https://p-gen.vercel.app/"
-    },
-    "tags": ["JavaScript"],
-    "date": "Oct/2019"
-  },
-  {
-    "title": "cli-coloring",
-    "desc": "A text coloring and formatting for the nodejs console logs.",
-    "links": {
-      "Source Code": "https://github.com/AM-77/cli-coloring"
-    },
-    "tags": ["JavaScript"],
-    "date": "Sep/2019"
-  },
-  {
-    "title": "dz-communes",
-    "desc": "A nodejs module for the list of all of the 48 wilayas of Algeria and their communes.",
-    "links": {
-      "Source Code": "https://github.com/AM-77/dz-communes",
-      "api": "https://dz-communes.herokuapp.com/"
-    },
-    "tags": ["JavaScript"],
-    "date": "May/2020"
-  },
-  {
     "title": "el-mesa",
     "desc": "A peer to peer chat room with react, node, express and socket.io,",
     "links": {
@@ -112,11 +63,12 @@ const works = [
   },
   {
     "title": "savednotes",
-    "desc": "A web app to save & share notes. w/ node, express, react & mySql.",
+    "desc": "A web app to save & share notes. w/ node, express, react & MySQL.",
     "links": {
-      "Source Code": "https://github.com/AM-77/savednotes"
+      "Source Code": "https://github.com/AM-77/savednotes",
+      "Link": "https://savednotes.vercel.app"
     },
-    "tags": ["Node", "Express", "MySQL", "React", "TypeScript"],
+    "tags": ["Node", "Express", "MySQL", "React"],
     "date": "Jan/2020"
   },
   {
@@ -127,15 +79,6 @@ const works = [
     },
     "tags": ["Node", "Express", "MongoDB", "React", "JavaScript"],
     "date": "Jan/2020"
-  },
-  {
-    "title": "SOACC",
-    "desc": "An inscription management app for the university and the library - MicroServices -",
-    "links": {
-      "Source Code": "https://github.com/AM-77/SOACC"
-    },
-    "tags": ["Node", "Express", "MongoDB", "React"],
-    "date": "Dec/2019"
   },
   {
     "title": "letra",
