@@ -84,8 +84,9 @@ const works = [
     "title": "letra",
     "desc": "A Lyrics application.",
     "links": {
-      "Source Code": "https://github.com/AM-77/letra",
-      "Link": "https://am-77.github.io/letra/#/"
+      "Client Side": "https://github.com/AM-77/letra",
+      "Server Side": "https://github.com/AM-77/letra-server",
+      "Link": "https://letra-one.vercel.app"
     },
     "tags": ["Node", "Express", "React", "JavaScript"],
     "date": "Jul/2020"
