@@ -63,7 +63,7 @@ const works = [
   },
   {
     "title": "savednotes",
-    "desc": "A web app to save & share notes. w/ node, express, react & MySQL.",
+    "desc": "A web app to save & share notes. w/ node, express, react & MySQL. (It might take sometime to load, due to the server hibernating - 🤷  free heroku - )",
     "links": {
       "Source Code": "https://github.com/AM-77/savednotes",
       "Link": "https://savednotes.vercel.app"
@@ -85,7 +85,7 @@ const works = [
     "desc": "A Lyrics application.",
     "links": {
       "Client Side": "https://github.com/AM-77/letra",
-      "Server Side": "https://github.com/AM-77/letra-server",
+      "Server Side": "https://github.com/AM-77/letra-server (It might take sometime to load, due to the server hibernating - 🤷  free heroku - )",
       "Link": "https://letra-one.vercel.app"
     },
     "tags": ["Node", "Express", "React", "JavaScript"],
@@ -130,6 +130,26 @@ const works = [
     },
     "tags": ["React", "JavaScript"],
     "date": "Sep/2020"
+  },
+  {
+    "title": "GitHub User Finder",
+    "desc": "A GitHub user's profile finder.",
+    "links": {
+      "Source Code": "https://github.com/AM-77/github-user-finder",
+      "Link": "https://github-user-finder-two.vercel.app"
+    },
+    "tags": ["React", "TypeScript", "SCSS"],
+    "date": "Oct/2020"
+  },
+  {
+    "title": "laoders",
+    "desc": "A collection of open source, animated, simple and easy to use CSS loaders.",
+    "links": {
+      "Source Code": "https://github.com/AM-77/loaders",
+      "Link": "https://loaders.vercel.app/"
+    },
+    "tags": ["React", "TypeScript", "SCSS"],
+    "date": "Nov/2020"
   }
 ]
 
