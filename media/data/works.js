@@ -82,10 +82,10 @@ const works = [
   },
   {
     "title": "letra",
-    "desc": "A Lyrics application.",
+    "desc": "A Lyrics application. (It might take sometime to load, due to the server hibernating - 🤷  free heroku - )",
     "links": {
       "Client Side": "https://github.com/AM-77/letra",
-      "Server Side": "https://github.com/AM-77/letra-server (It might take sometime to load, due to the server hibernating - 🤷  free heroku - )",
+      "Server Side": "https://github.com/AM-77/letra-server",
       "Link": "https://letra-one.vercel.app"
     },
     "tags": ["Node", "Express", "React", "JavaScript"],
