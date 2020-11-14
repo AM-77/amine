@@ -37,5 +37,15 @@ const old_works = [
     },
     "tags": ["Template", "Materialize"],
     "date": "Nov/2019"
-  }
+  },
+  {
+    "title": "Numix Project",
+    "desc": "Recreated the official website for the Numix Project.",
+    "links": {
+      "Source Code": "https://github.com/AM-77/HTML5-Templates/tree/master/numixproject",
+      "Link": "https://numixproject.vercel.app"
+    },
+    "tags": ["Template"],
+    "date": "May/2018"
+  },
 ]

@@ -37,16 +37,6 @@
     "date": "Nov/2018"
   },
   {
-    "title": "Numix Project",
-    "desc": "Recreated the official website for the Numix Project.",
-    "links": {
-      "Source Code": "https://github.com/AM-77/HTML5-Templates/tree/master/numixproject",
-      "Link": "https://numixproject.vercel.app"
-    },
-    "tags": ["Template"],
-    "date": "May/2019"
-  },
-  {
     "title": "University Ibn Khaldoun Community",
     "desc": "A landing page for the community of the University Ibn Khaldoun .",
     "links": {
@@ -113,5 +103,25 @@
     },
     "tags": ["Deno", "TypeScript"],
     "date": "May/2020"
+  },
+  {
+    "title": "GitHub User Finder",
+    "desc": "A GitHub user's profile finder.",
+    "links": {
+      "Source Code": "https://github.com/AM-77/github-user-finder",
+      "Link": "https://github-user-finder-two.vercel.app"
+    },
+    "tags": ["React", "TypeScript", "SCSS"],
+    "date": "Oct/2020"
+  },
+  {
+    "title": "Poké-NES",
+    "desc": "Pokédex in a Nintendo style.",
+    "links": {
+      "Source Code": "https://github.com/AM-77/poke-nes",
+      "Link": "https://poke-nes.vercel.app/"
+    },
+    "tags": ["React", "JavaScript"],
+    "date": "Sep/2020"
   },
 ]

@@ -122,26 +122,6 @@ const works = [
     "date": "Aug/2020"
   },
   {
-    "title": "Poké-NES",
-    "desc": "Pokédex in a Nintendo style.",
-    "links": {
-      "Source Code": "https://github.com/AM-77/poke-nes",
-      "Link": "https://poke-nes.vercel.app/"
-    },
-    "tags": ["React", "JavaScript"],
-    "date": "Sep/2020"
-  },
-  {
-    "title": "GitHub User Finder",
-    "desc": "A GitHub user's profile finder.",
-    "links": {
-      "Source Code": "https://github.com/AM-77/github-user-finder",
-      "Link": "https://github-user-finder-two.vercel.app"
-    },
-    "tags": ["React", "TypeScript", "SCSS"],
-    "date": "Oct/2020"
-  },
-  {
     "title": "laoders",
     "desc": "A collection of open source, animated, simple and easy to use CSS loaders.",
     "links": {
