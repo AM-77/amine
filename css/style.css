@@ -47,6 +47,9 @@
   --materialize: #ee6e73;
   --html: #e34c26;
   --template: #e34c26;
+  --firebase: #F5820B;
+  --styled-components: #F574DE;
+  --i18next: #009688;
 }
 
 /* reset defaults */
@@ -162,6 +165,21 @@ li {
   box-shadow: 0 0 8px -2px var(--template);
 }
 
+.tag.firebase {
+  background: var(--firebase);
+  box-shadow: 0 0 8px -2px var(--firebase);
+}
+
+.tag.styled-components {
+  background: var(--styled-components);
+  box-shadow: 0 0 8px -2px var(--styled-components);
+}
+
+.tag.i18next {
+  background: var(--i18next);
+  box-shadow: 0 0 8px -2px var(--i18next);
+}
+
 .filter.javascript {
   color: var(--javascript);
 }
@@ -236,6 +254,18 @@ li {
 
 .filter.template {
   color: var(--template);
+}
+
+.filter.firebase {
+  color: var(--firebase);
+}
+
+.filter.styled-components {
+  color: var(--styled-components);
+}
+
+.filter.i18next {
+  color: var(--i18next);
 }
 
 /* animation */

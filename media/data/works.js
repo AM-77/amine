@@ -88,7 +88,7 @@ const works = [
       "Source Code": "https://github.com/ReadMe-dz/readme",
       "Screen Shots": "https://amine.js.org/readme/screenshots.html"
     },
-    "tags": ["Node", "Express", "MongoDB", "React", "SASS", "JavaScript", "TypeScript"],
+    "tags": ["Node", "Express", "MongoDB", "React", "SCSS", "JavaScript", "TypeScript"],
     "date": "Jan/2020"
   },
   {
