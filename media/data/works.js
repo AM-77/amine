@@ -98,7 +98,7 @@ const works = [
       "Source Code": "https://github.com/sos-animals-dz/sos-animals",
       "Link": "https://sos-animals.vercel.app/"
     },
-    "tags": ["MapBox", "Firebase", "React", "CSS", "TypeScript"],
+    "tags": ["Firebase", "React", "CSS", "TypeScript"],
     "date": "Dec/2020"
   },
   {
