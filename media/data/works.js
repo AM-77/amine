@@ -10,6 +10,16 @@ const works = [
     "date": "May/2019"
   },
   {
+    "title": "Rigel",
+    "desc": "A Free portfolio template for developers and designers.",
+    "links": {
+      "Source Code": "https://github.com/AM-77/rigel",
+      "Documentation": "https://rigel.vercel.app/"
+    },
+    "tags": ["React", "i18next", "styled-components"],
+    "date": "Dec/2020"
+  },
+  {
     "title": "react-datepickerrz",
     "desc": "With double r & z, a customizable, zero-dependency datepicker component for React",
     "links": {
@@ -72,13 +82,24 @@ const works = [
     "date": "Jan/2020"
   },
   {
-    "title": "books-exchange (WIP)",
-    "desc": "An Algerian books exchanging plateform",
+    "title": "Read Me (WIP)",
+    "desc": "An Algerian books selling plateform",
     "links": {
-      "Source Code": "https://github.com/AM-77/books-exchange"
+      "Source Code": "https://github.com/ReadMe-dz/readme",
+      "Screen Shots": "https://amine.js.org/readme/screenshots.html"
     },
-    "tags": ["Node", "Express", "MongoDB", "React", "JavaScript"],
+    "tags": ["Node", "Express", "MongoDB", "React", "SASS", "JavaScript", "TypeScript"],
     "date": "Jan/2020"
+  },
+  {
+    "title": "SOS Animals DZ",
+    "desc": "A web platform for helping animals in Algerian.",
+    "links": {
+      "Source Code": "https://github.com/sos-animals-dz/sos-animals",
+      "Link": "https://sos-animals.vercel.app/"
+    },
+    "tags": ["MapBox", "Firebase", "React", "CSS", "TypeScript"],
+    "date": "Dec/2020"
   },
   {
     "title": "letra",
