@@ -112,7 +112,7 @@
           </div>
           <div class="form">
             <form action="https://formspree.io/f/mleodonp" method="POST">
-              <p class="status">this is status</p>
+              <p class="status"></p>
               <div class="input">
                 <label for="name">Name:</label>
                 <input id="name" name="name" required type="text">
@@ -123,7 +123,7 @@
               </div>
               <div class="message">
                 <label for="message">Message:</label>
-                <textarea id="message" required></textarea>
+                <textarea id="message" name="message" required></textarea>
               </div>
               <button type="submit">Send</button>
             </form>
@@ -210,11 +210,30 @@
       // Success and Error functions for after the form is submitted
       function success() {
         form.reset()
-        status.innerHTML = "Thanks!"
+        sending("Send")
+        status.innerHTML = "<span class='success'>Thanks! Your message have been sent.</span>"
+
+        setTimeout(() => {
+          status.innerHTML = ""
+        }, 4500);
       }
 
       function error() {
-        status.innerHTML = "Oops! There was a problem."
+        sending("Send")
+        status.innerHTML = "<span class='error'>Oops! There was a problem, please try again.</span>"
+
+        setTimeout(() => {
+          status.innerHTML = ""
+        }, 4500);
+      }
+
+      function sending(buttonText, disabled) {
+        button.innerHTML = buttonText
+        if (disabled) {
+          button.disabled = "disabled"
+        } else {
+          button.disabled = false
+        }
       }
 
       // handle the form submission event
@@ -232,14 +251,12 @@
         xhr.onreadystatechange = function() {
           if (xhr.readyState !== XMLHttpRequest.DONE) return
           if (xhr.status === 200) {
-            console.log("ok")
             success(xhr.response, xhr.responseType)
           } else {
-            console.log("error")
             error(xhr.status, xhr.response, xhr.responseType)
           }
         }
-        console.log("sending ...")
+        sending("Sending ...", true)
         xhr.send(data)
       }
     })
