@@ -313,6 +313,7 @@ body {
   color: var(--light);
   font-family: 'Abel', 'Roboto Mono', 'Roboto', sans-serif;
   position: relative;
+  height: calc(100vh + 250px);
 }
 
 /* preloader */
