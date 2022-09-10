@@ -1,0 +1,150 @@
+---
+import NavBar from "../components/NavBar.astro";
+import MainLayout from "./MainLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<style is:global>
+  .bg-noisy {
+    background: url("/noisy.png");
+  }
+
+  .astro-code {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    font-family: "Operator Mono";
+  }
+
+  p {
+    font-family: "IBM Plex Sans";
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong {
+    font-family: "Share Tech Mono";
+    color: #119955;
+  }
+
+  h1 {
+    margin-top: 64px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  h2 {
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  h3 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  code,
+  pre {
+    font-family: "Operator Mono" !important;
+    font-weight: 350 !important;
+  }
+
+  code {
+    background: #ffffff10;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 4px;
+  }
+
+  pre code {
+    background: transparent;
+  }
+
+  ul,
+  ol {
+    list-style: square;
+    list-style-position: inside;
+  }
+
+  li {
+    font-family: "IBM Plex Sans";
+    margin-bottom: 8px;
+  }
+
+  blockquote {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-left: 2px solid #119955;
+    background: #ffffff10;
+    font-style: italic;
+  }
+
+  a {
+    color: #119955;
+    cursor: pointer;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  table {
+    font-family: "IBM Plex Sans";
+    width: 100%;
+  }
+
+  th,
+  td {
+    border: 1px solid #119955;
+    box-sizing: border-box;
+    padding: 16px;
+  }
+</style>
+
+<MainLayout title={frontmatter.title}>
+  <div
+    class="bg-noisy flex justify-center bg-repeat w-screen h-screen overflow-hidden p-4"
+  >
+    <div class="h-full w-12 overflow-hidden shrink-0">
+      <NavBar slot="nav-bar" active="blog" />
+    </div>
+    <div class="w-full max-w-3xl text-gray-50">
+      <div class="flex flex-col p-4">
+        <span class="text-3xl font-share font-semibold text-primary"
+          >{frontmatter.title}
+        </span>
+        <span class="text-xs font-share font-medium"
+          >Published on: {new Date(frontmatter.date).toLocaleString()}
+        </span>
+      </div>
+      <div
+        class="w-full max-w-3xl h-[calc(100%-4rem)] overflow-auto p-4 relative scrollbar"
+      >
+        <slot />
+      </div>
+    </div>
+    <!-- <div class="flex justify-center items-center w-12">
+      <div class="origin-center rotate-90">
+        <slot name="page-title" />
+      </div>
+    </div> -->
+  </div>
+</MainLayout>
