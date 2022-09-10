@@ -1,0 +1,31 @@
+---
+import PageLayout from "../../layouts/PageLayout.astro";
+
+import NavBar from "../../components/NavBar.astro";
+import PageTitle from "../../components/PageTitle.astro";
+
+import Posts from "../../components/Posts.svelte";
+
+import { postsStore } from "../../stores";
+import { formatPosts } from "../../utils";
+
+const posts = formatPosts(await Astro.glob("./**/*.md"));
+postsStore.set(posts);
+---
+
+<PageLayout title="AM77 | Blog">
+  <NavBar slot="nav-bar" active="blog" />
+  <PageTitle slot="page-title" title="blog" />
+
+  <div class="flex w-full flex-col p-16 gap-12">
+    <h1 class="font-ibm font-medium text-3xl text-gray-50 !m-0">Blog</h1>
+    <Posts />
+    <span class="text-sm font-medium font-ibm text-gray-50"
+      >I also write in <a
+        href="https://dev.to/am77"
+        target="_blank"
+        class="font-share font-semibold underline hover:text-primary">dev.to</a
+      >
+    </span>
+  </div>
+</PageLayout>
