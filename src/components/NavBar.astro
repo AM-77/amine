@@ -1,0 +1,40 @@
+---
+import {
+  HomeIcon,
+  MixIcon,
+  KeyboardIcon,
+  CrumpledPaperIcon,
+} from "@radix-ui/react-icons";
+import IconButton from "./IconButton.svelte";
+
+export interface Props {
+  active: string;
+}
+
+const { active } = Astro.props;
+---
+
+<div class="h-full w-full flex flex-col gap-4">
+  <div class="flex w-full h-12 justify-center items-center">
+    <a class="w-6 h-6" href="/">
+      <img class="w-6 h-6" src="/favicon.svg" alt="amine" />
+    </a>
+  </div>
+  <div class="flex flex-col gap-4">
+    <IconButton goto="/" active={active === "home"}>
+      <HomeIcon />
+    </IconButton>
+
+    <IconButton goto="/projects" active={active === "projects"}>
+      <MixIcon />
+    </IconButton>
+
+    <IconButton goto="/blog" active={active === "blog"}>
+      <CrumpledPaperIcon />
+    </IconButton>
+
+    <IconButton goto="/contact" active={active === "contact"}>
+      <KeyboardIcon />
+    </IconButton>
+  </div>
+</div>
