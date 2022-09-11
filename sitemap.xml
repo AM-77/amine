@@ -2,22 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
   <loc>http://amine.js.org/</loc>
-  <lastmod>2021-03-13</lastmod>
+  <lastmod>2022-09-11</lastmod>
 </url>
 <url>
-  <loc>http://amine.js.org/about.html</loc>
-  <lastmod>2021-03-13</lastmod>
+  <loc>http://amine.js.org/projects</loc>
+  <lastmod>2022-09-11</lastmod>
 </url>
 <url>
-  <loc>http://amine.js.org/work.html</loc>
-  <lastmod>2021-03-13</lastmod>
+  <loc>http://amine.js.org/contact</loc>
+  <lastmod>2022-09-11</lastmod>
 </url>
 <url>
-  <loc>http://amine.js.org/contact.html</loc>
-  <lastmod>2021-03-13</lastmod>
-</url>
-<url>
-  <loc>http://amine.js.org/media/resume.pdf</loc>
-  <lastmod>2021-03-13</lastmod>
+  <loc>http://amine.js.org/blog</loc>
+  <lastmod>2022-09-11</lastmod>
 </url>
 </urlset>
