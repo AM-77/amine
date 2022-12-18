@@ -1,20 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
-      backgroundImage: {
-        noisy: "url('/noisy.png')",
-      },
       colors: {
-        primary: "#119955",
+        primary: '#119955',
       },
       fontFamily: {
-        share: ["Share Tech Mono", "Roboto"],
-        ibm: ["IBM Plex Sans"],
-        operator: ["Operator Mono"],
-      },
-    },
+        syne: ['Syne'],
+      }
+    }
   },
-  plugins: [require("tailwind-scrollbar")],
-};
+  plugins: [],
+  darkMode: 'class',
+}

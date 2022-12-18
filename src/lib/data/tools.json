@@ -1,0 +1,83 @@
+[
+	{
+		"title": "react-datepickerrz",
+		"desc": "With double r & z, a customizable, zero-dependency datepicker component for React",
+		"links": {
+			"Source Code": "https://github.com/AM-77/react-datepickerrz",
+			"Demo": "https://am-77.github.io/react-datepickerrz/"
+		},
+		"tags": ["React", "JavaScript"]
+	},
+	{
+		"title": "react-coder",
+		"desc": "A lightweight, reusable code wrapper & editor component for react.",
+		"links": {
+			"Source Code": "https://github.com/AM-77/react-coder",
+			"Docs": "https://am-77.github.io/react-coder/"
+		},
+		"tags": ["React", "TypeScript"]
+	},
+	{
+		"title": "react-floating-buttons",
+		"desc": "A lightweight (zero-dependency), customizable and animated react floating buttons",
+		"links": {
+			"Source Code": "https://github.com/AM-77/react-floating-buttons",
+			"Demo": "https://am-77.github.io/react-floating-buttons-demo/"
+		},
+		"tags": ["React", "JavaScript"]
+	},
+	{
+		"title": "Nyno-UI",
+		"desc": "A complete CSS framework based on flexbox.",
+		"links": {
+			"Source Code": "https://github.com/AM77-Dev/Nyno-UI",
+			"Docs": "https://docs.medamine.now.sh/"
+		},
+		"tags": ["CSS", "SCSS"]
+	},
+	{
+		"title": "deno-dotenv",
+		"desc": "A zero-dependency deno module that loads environment variables from a file.",
+		"links": {
+			"Source Code": "https://github.com/AM-77/deno-dotenv",
+			"Article": "https://am77-blog.netlify.app/build-your-own-deno-dotenv/"
+		},
+		"tags": ["Deno", "TypeScript"]
+	},
+	{
+		"title": "p-gen",
+		"desc": "A lightweight, customizable javascript password generator.",
+		"links": {
+			"Source Code": "https://github.com/AM-77/p-gen",
+			"Demo": "https://p-gen.vercel.app/"
+		},
+		"tags": ["JavaScript"]
+	},
+	{
+		"title": "dz-communes",
+		"desc": "A nodejs module for the list of all of the 48 wilayas of Algeria and their communes.",
+		"links": {
+			"Source Code": "https://github.com/AM-77/dz-communes",
+			"Demo": "https://dz-communes.herokuapp.com/"
+		},
+		"tags": ["JavaScript"]
+	},
+	{
+		"title": "border-radius-generator",
+		"desc": "A border-radius generator with react.",
+		"links": {
+			"Source Code": "https://github.com/AM-77/border-radius-generator",
+			"Link": "https://am-77.github.io/border-radius-generator/"
+		},
+		"tags": ["React", "TypeScript"]
+	},
+	{
+		"title": "laoders",
+		"desc": "A collection of open source, animated, simple and easy to use CSS loaders.",
+		"links": {
+			"Source Code": "https://github.com/AM-77/loaders",
+			"Link": "https://loaders.vercel.app/"
+		},
+		"tags": ["React", "TypeScript", "SCSS"]
+	}
+]

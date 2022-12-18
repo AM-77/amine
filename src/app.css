@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blog-post p {
+  font-family: "IBM Plex Sans";
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.dark .blog-post p {
+  color: #ffffff;
+}
+
+.blog-post h1,
+.blog-post h2,
+.blog-post h3,
+.blog-post h4,
+.blog-post h5,
+.blog-post h6,
+.blog-post strong {
+  font-family: 'Syne';
+  color: #119955;
+}
+
+.blog-post h1 {
+  margin-top: 64px;
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.blog-post h2 {
+  margin-top: 48px;
+  margin-bottom: 24px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.blog-post h3 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.blog-post code,
+.blog-post pre {
+  font-family: "Operator Mono", "ubuntu", "monospace" !important;
+  font-weight: 350 !important;
+  background: #00000010;
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  overflow: auto;
+}
+
+.blog-post pre {
+  padding: 16px !important;
+  border-radius: 0px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.blog-post pre code {
+  background: transparent;
+}
+
+.dark .blog-post code,
+.dark .blog-post pre {
+  color: #ffffff;
+  background: #ffffff20;
+}
+
+.dark .blog-post pre code {
+  background: transparent;
+}
+
+.blog-post ul,
+.blog-post ol {
+  list-style: square;
+  list-style-position: inside;
+}
+
+.dark .blog-post ul,
+.dark .blog-post ol {
+  color: #ffffff;
+}
+
+.blog-post li {
+  font-family: "IBM Plex Sans";
+  margin-bottom: 8px;
+}
+
+.blog-post blockquote {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-left: 2px solid #119955;
+  background: #00000010;
+  font-style: italic;
+}
+
+.dark .blog-post blockquote {
+  color: #ffffff;
+  background: #ffffff20;
+}
+
+.blog-post a {
+  color: #119955;
+  cursor: pointer;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+.blog-post table {
+  font-family: "IBM Plex Sans";
+  width: 100%;
+}
+
+.dark .blog-post table {
+  color: #ffffff;
+}
+
+.blog-post th,
+.blog-post td {
+  border: 1px solid #119955;
+  box-sizing: border-box;
+  padding: 16px;
+}
