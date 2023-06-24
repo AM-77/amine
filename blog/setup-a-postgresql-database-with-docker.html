@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="title" content="Mohamed Amine Griche">
+		<meta name="description" content="Mohamed Amine Griche - Software engineer">
+		<meta name="keywords" content="Mohamed Amine Griche, Software engineer, JavaScript, TypeScript, Frontend, Developer">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<meta name="author" content="Mohamed Amine Griche">
+		<title>Mohamed Amine Griche</title>
+
+		
+		<link href="../_app/immutable/assets/0.e5682f18.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.0ca7b26b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.fbbdd111.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.5ca31056.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.6a16ca6f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.8ae3d01d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.ce1a4ae1.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.ebbef51d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/dynamic-import-helper.be004503.js">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Share+Tech+Mono&family=Syne:wght@400;500&display=swap" rel="stylesheet"/>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<div><div class="flex w-screen h-screen justify-center overflow-y-scroll bg-gray-100 dark:bg-neutral-900"><div class="w-full max-w-5xl h-full"><div class="fixed top-0 w-full max-w-5xl"><div class="flex h-12 items-center backdrop-blur-md border-b border-x-0 lg:border-x border-gray-900 dark:border-gray-100"><div class="flex justify-center items-center w-12 h-12 border-r border-gray-900 dark:border-gray-100"><a href="/" class="flex justify-center items-center w-12 h-12 cursor-pointer hover:animate-pulse"><img src="/logo.svg" class="w-6 h-6"></a></div>
+
+	<div class="flex h-full gap-3 lg:gap-6 items-center ml-auto mr-auto lg:mr-4"><a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx" href="/">home
+
+	
+</a>
+		<a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx" href="/portfolio">portfolio
+
+	
+</a>
+		<a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx active" href="/blog">blog
+
+	<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="absolute top-1.5 -left-3 hidden lg:block svelte-l7mpdx active-icon"><path d="M11.029 2.54a2 2 0 0 1 1.942 0l7 3.888A2 2 0 0 1 21 8.177v7.646a2 2 0 0 1-1.029 1.748l-7 3.89a2 2 0 0 1-1.942 0l-7-3.89A2 2 0 0 1 3 15.824V8.177a2 2 0 0 1 1.029-1.749l7-3.888z"></path></svg>
+</a>
+		<a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx" href="/til">til
+
+	
+</a>
+		<a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx" href="/contact">contact
+
+	
+</a></div>
+
+	<button class="w-12 h-12 border-l border-gray-900 dark:border-gray-100 cursor-pointer"><svg class="w-full h-full p-3 text-yellow-300 hover:animate-spin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3V2m0 20v-1m9-9h1M2 12h1m15.5-6.5L20 4M4 20l1.5-1.5M4 4l1.5 1.5m13 13L20 20"></path><circle cx="12" cy="12" r="4"></circle></svg></button></div></div>
+			<div class="min-h-[calc(100%-49px)] py-12"><article class="flex flex-col"><div class="flex justify-between items-center p-4 lg:p-12 flex-col lg:flex-row text-center lg:text-left"><h1 class="text-3xl font-syne font-semibold text-gray-900 dark:text-gray-100">Setup a PostgreSQL database with Docker</h1>
+		<span class="text-sm font-syne text-neutral-600 dark:text-neutral-200">22/08/2022</span></div>
+	<div class="blog-post dark:blog-post-dark p-4 lg:p-12"><blockquote><p><strong><em>DISCLAIMER:</em></strong> This is not a Docker 101, I assume you already have some basic knowledge and expertise with docker and also have docker already installed.</p></blockquote>
+<h1 id="what-is-docker-compose"><a aria-hidden="true" tabindex="-1" href="#what-is-docker-compose"><span class="icon icon-link"></span></a>What is docker compose?</h1>
+<p>Docker Compose is a tool for defining and running multi-container Docker applications, it allows you to create and start multiple services from a <code>docker-compose.yml</code> configuration file.</p>
+<h1 id="why-using-docker-compose"><a aria-hidden="true" tabindex="-1" href="#why-using-docker-compose"><span class="icon icon-link"></span></a>Why using docker compose?</h1>
+<h2 id="lets-get-started-with-setting-up-a-postgresql-database"><a aria-hidden="true" tabindex="-1" href="#lets-get-started-with-setting-up-a-postgresql-database"><span class="icon icon-link"></span></a>Lets get started with setting up a PostgreSQL database</h2>
+<h3 id="step-1"><a aria-hidden="true" tabindex="-1" href="#step-1"><span class="icon icon-link"></span></a>Step 1:</h3>
+<p>In the root of your project folder, create a new file and name it <code>docker-compose.yml</code></p>
+<h3 id="step-2"><a aria-hidden="true" tabindex="-1" href="#step-2"><span class="icon icon-link"></span></a>Step 2:</h3>
+<p>Let’s open the file and start adding the configurations:</p>
+<p>1- Specify the docker compose version: I am going to use <code>version: &quot;3.3&quot;</code></p>
+<pre class="language-yml"><!-- HTML_TAG_START --><code class="language-yml"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3.3'</span></code><!-- HTML_TAG_END --></pre>
+<p>2- Add the services (each service represent a container): in our case we are going to add one service, I am going to name it <code>postgres-db</code> you can name it what ever you want</p>
+<pre class="language-yml"><!-- HTML_TAG_START --><code class="language-yml"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3.3'</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  postgres<span class="token punctuation">-</span>db<span class="token punctuation">:</span></code><!-- HTML_TAG_END --></pre>
+<p>3- Find the image you want to use on <a href="https://hub.docker.com" rel="nofollow">Docker Hub</a>: <strong>make sure to use the official images</strong>, I prefer to use <a href="https://hub.docker.com/layers/postgres/library/postgres/latest/images/sha256-5e12b4abbed98e4cde708fcb6d2aa7c510f26e65e65474ac0ef7a9e85f21e60c?context=explore" rel="nofollow">postgres:latest</a> which is alawys updated, you can use any tag you want from <a href="https://hub.docker.com/_/postgres/tags" rel="nofollow">tags</a></p>
+<pre class="language-yml"><!-- HTML_TAG_START --><code class="language-yml"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3.3'</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">postgres-db</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> postgres<span class="token punctuation">:</span>latest</code><!-- HTML_TAG_END --></pre>
+<p>4- Map the port of the docker container with the port of the hosting machine: to be able to access the data from outside the container, the default port of postgresql is <code>5432</code>, so I am going to map with the same port <code>5432</code> (you can use any port you want)</p>
+<pre class="language-yml"><!-- HTML_TAG_START --><code class="language-yml"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3.3'</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">postgres-db</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> postgres<span class="token punctuation">:</span>latest
+
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token comment"># hosting-machine port:docker-container port</span>
+      <span class="token punctuation">-</span> 5432<span class="token punctuation">:</span><span class="token number">5432</span></code><!-- HTML_TAG_END --></pre>
+<p>5- Setup volumes to save the data on the hosting machine: if we dont set it the data will be erased when the container is stopped, by default the data is saved on the container under <code>/var/lib/postgresql/data/</code> folder, so we map that folder to whatever folder in the hosting machine</p>
+<pre class="language-yml"><!-- HTML_TAG_START --><code class="language-yml"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3.3'</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">postgres-db</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> postgres<span class="token punctuation">:</span>latest
+
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token comment"># hosting-machine port:docker-container port</span>
+      <span class="token punctuation">-</span> 5432<span class="token punctuation">:</span><span class="token number">5432</span>
+
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token comment"># hosting-machine folder:docker-container folder</span>
+      <span class="token punctuation">-</span> ./postgres<span class="token punctuation">-</span>db<span class="token punctuation">:</span>/var/lib/postgresql/data/</code><!-- HTML_TAG_END --></pre>
+<p>6- Add the environment variables: PostgreSQL requires 3 environment variables <code>POSTGRES_USER</code>, <code>POSTGRES_PASSWORD</code> and <code>POSTGRES_DB</code></p>
+<pre class="language-yml"><!-- HTML_TAG_START --><code class="language-yml"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3.3'</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">postgres-db</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> postgres<span class="token punctuation">:</span>latest
+
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token comment"># hosting-machine port:docker-container port</span>
+      <span class="token punctuation">-</span> 5432<span class="token punctuation">:</span><span class="token number">5432</span>
+
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token comment"># hosting-machine folder:docker-container folder</span>
+      <span class="token punctuation">-</span> ./postgres<span class="token punctuation">-</span>db<span class="token punctuation">:</span>/var/lib/postgresql/data/
+
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> POSTGRES_USER=amine
+      <span class="token punctuation">-</span> POSTGRES_PASSWORD=4N45e2o1<span class="token important">*22$Euf1g279</span>
+      <span class="token punctuation">-</span> POSTGRES_DB=db</code><!-- HTML_TAG_END --></pre>
+<p><strong>OR</strong></p>
+<p>you can set the environment variables in a <code>.env</code> and configure the docker compose to use it from there</p>
+<pre class="language-yml"><!-- HTML_TAG_START --><code class="language-yml"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3.3'</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">postgres-db</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> postgres<span class="token punctuation">:</span>latest
+
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token comment"># hosting-machine port:docker-container port</span>
+      <span class="token punctuation">-</span> 5432<span class="token punctuation">:</span><span class="token number">5432</span>
+
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token comment"># hosting-machine folder:docker-container folder</span>
+      <span class="token punctuation">-</span> ./postgres<span class="token punctuation">-</span>db<span class="token punctuation">:</span>/var/lib/postgresql/data/
+
+    <span class="token key atrule">env_file</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> .env</code><!-- HTML_TAG_END --></pre>
+<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash"><span class="token comment"># .env file</span>
+<span class="token assign-left variable">POSTGRES_USER</span><span class="token operator">=</span>amine
+<span class="token assign-left variable">POSTGRES_PASSWORD</span><span class="token operator">=</span>4N45e2o1*22<span class="token variable">$Euf1g279</span>
+<span class="token assign-left variable">POSTGRES_DB</span><span class="token operator">=</span>db</code><!-- HTML_TAG_END --></pre>
+<h3 id="step-3"><a aria-hidden="true" tabindex="-1" href="#step-3"><span class="icon icon-link"></span></a>Step 3:</h3>
+<p>Open the terminal and navigate to the folder where the <code>docker-compose.yml</code> file lives</p>
+<p><strong>Run the docker compose:</strong></p>
+<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash">  <span class="token function">docker</span> compose up</code><!-- HTML_TAG_END --></pre>
+<p>I like to run the container as a deamon with <code>docker compose up -d</code>.</p>
+<p>Now the database should be started successfully, and you can access it via <code>http://localhost:5432</code> (or whatever the port you use)</p>
+<p><strong>Stop the docker compose:</strong></p>
+<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash">  <span class="token function">docker</span> compose down</code><!-- HTML_TAG_END --></pre>
+<h3 id="extra-step"><a aria-hidden="true" tabindex="-1" href="#extra-step"><span class="icon icon-link"></span></a>Extra step:</h3>
+<p>This just a one way of using docker compose (basically how I like to use it), there is a lot of stuff I didn’t cover and I highly suggest that you check the full <a href="https://docs.docker.com/compose/" rel="nofollow">Docker Compose documentation</a>.</p>
+<p>That’s it for this time, see you in the next post.</p></div></article></div>
+			<div class="fixed bottom-0 w-full max-w-5xl"><div class="flex items-center backdrop-blur-md justify-between h-12 border-t border-x-0 lg:border-x border-gray-900 dark:border-gray-100"><div class="flex"><a class="icon dark:border-gray-100 dark:text-gray-100 svelte-v3mbcg" href="https://github.com/AM-77"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><g clip-path="url(#clip0_100_4)"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></g></svg></a>
+
+		<a class="icon dark:border-gray-100 dark:fill-gray-100 svelte-v3mbcg" href="https://gitlab.com/amine-griche"><svg width="24px" height="24px" viewBox="-2 -2.5 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10.006 18.443L6.326 7.118h7.36l-3.68 11.325zm0 0L1.168 7.118h5.158l3.68 11.325zM1.168 7.118l8.838 11.325-9.68-7.032a.762.762 0 0 1-.276-.852l1.118-3.441zm0 0L3.385.296a.38.38 0 0 1 .724 0l2.217 6.822H1.168zm8.838 11.325l3.68-11.325h5.157l-8.837 11.325zm8.837-11.325l1.119 3.441a.762.762 0 0 1-.277.852l-9.68 7.032 8.838-11.325zm0 0h-5.157L15.902.296a.38.38 0 0 1 .725 0l2.216 6.822z"></path></svg></a>
+
+		<a class="icon dark:border-gray-100 dark:text-gray-100 w-6 h-6 svelte-v3mbcg" href="https://www.linkedin.com/in/mohamed-amine-griche"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161V2.838zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634 3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388zm-5.5 10.403h3.208V9.25H4.208v10.54zM7.875 5.812a2.063 2.063 0 1 1-4.125 0 2.063 2.063 0 0 1 4.125 0z"></path></svg></a>
+
+		<a class="icon dark:border-gray-100 dark:text-gray-100 svelte-v3mbcg" href="https://codepen.io/am-77"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.372.19c.38-.253.875-.253 1.256 0L23.492 7.4c.317.21.508.565.508.946v7.308c0 .38-.19.736-.508.947l-10.864 7.21c-.38.252-.875.252-1.256 0L.508 16.6A1.136 1.136 0 0 1 0 15.654V8.346c0-.38.19-.736.508-.947L11.372.19zm-9.1 10.273v3.058l2.288-1.54-2.288-1.518zm4.337 2.878L3.18 15.648l7.684 5.1v-4.583L6.61 13.341zm6.527 2.824v4.582l7.684-5.1-3.43-2.306-4.254 2.824zm6.303-4.183l2.29 1.54v-3.06l-2.29 1.52zm1.371-3.636l-3.41 2.263-4.264-2.868V3.253l7.674 5.093zm-9.946-5.093V7.74l-4.263 2.868L3.19 8.346l7.674-5.093zM12 9.715l-3.35 2.254L12 14.192l3.35-2.223L12 9.715z"></path></svg></a>
+
+		<a class="icon dark:border-gray-100 dark:text-gray-100 svelte-v3mbcg" href="https://stackoverflow.com/users/10564525"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><path d="M18.372 20.222v-5.358h1.79V22H4v-7.136h1.79v5.358h12.582z"></path><path d="M7.768 14.356l8.79 1.824.372-1.755L8.14 12.6l-.372 1.756zm1.162-4.157l8.14 3.764.744-1.617-8.14-3.787-.744 1.64zm2.256-3.973l6.907 5.705 1.14-1.363-6.907-5.704-1.14 1.362zM15.651 2L14.21 3.062l5.35 7.16L21 9.159 15.651 2zm-8.07 16.42h8.977v-1.778H7.581v1.778z"></path></svg></a></div>
+
+	<div class="flex items-center justify-center px-4 h-12 border-l border-gray-900 dark:border-gray-100"><span class="text-xs text-gray-900 dark:text-gray-100 font-syne font-medium capitalize">© 2023 amine griche
+		</span></div>
+</div></div></div></div></div>
+
+
+			
+			<script>
+				{
+					__sveltekit_1vu137h = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.0ca7b26b.js"),
+						import("../_app/immutable/entry/app.6a16ca6f.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
