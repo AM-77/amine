@@ -27,7 +27,8 @@
 
 	<div class="flex flex-col gap-2 text-center lg:text-left">
 		<span class="text-gray-900 dark:text-gray-100 font-syne text-md">
-			I'm a software engineer based in Algeria, interested in JavaScript/TypeScript all things.
+			A software engineer with a strong academic background and a stronger practical experience.
+			Able to think through a problem coupled with the confidence to make ideas heard.
 		</span>
 		<span class="text-gray-900 dark:text-gray-100 font-syne text-md">
 			In the last couple of years I have been working mainly as a front-end developer using

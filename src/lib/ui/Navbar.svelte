@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
+
 	import darkMode from '$lib/stores/darkMode';
 	import NavLink from '$lib/ui/NavLink.svelte';
 
@@ -16,21 +18,22 @@
 		class="flex justify-center items-center w-12 h-12 border-r border-gray-900 dark:border-gray-100"
 	>
 		<a
-			href="/"
+			href="{base}/"
 			class="flex justify-center items-center w-12 h-12 cursor-pointer hover:animate-pulse"
 		>
-			<img src="/logo.svg" class="w-6 h-6" />
+			<img src="{base}/logo.svg" class="w-6 h-6" alt="" />
 		</a>
 	</div>
 
 	<div class="flex h-full gap-3 lg:gap-6 items-center ml-auto mr-auto lg:mr-4">
-		<NavLink text="home" active={$page.route.id === '/'} href="/" />
-		<NavLink text="portfolio" active={$page.route.id === '/portfolio'} href="/portfolio" />
-		<NavLink text="blog" active={($page.route.id || '').includes('/blog')} href="/blog" />
-		<NavLink text="contact" active={$page.route.id === '/contact'} href="/contact" />
+		<NavLink text="home" active={$page.route.id === '/'} href="{base}/" />
+		<NavLink text="portfolio" active={$page.route.id === '/portfolio'} href="{base}/portfolio" />
+		<NavLink text="blog" active={($page.route.id || '').includes('/blog')} href="{base}/blog" />
+		<NavLink text="til" active={($page.route.id || '').includes('/til')} href="{base}/til" />
+		<NavLink text="contact" active={$page.route.id === '/contact'} href="{base}/contact" />
 	</div>
 
-	<div
+	<button
 		class="w-12 h-12 border-l border-gray-900 dark:border-gray-100 cursor-pointer"
 		on:click={switchMode}
 	>
@@ -71,5 +74,5 @@
 				<circle cx="12" cy="12" r="4" />
 			</svg>
 		{/if}
-	</div>
+	</button>
 </div>

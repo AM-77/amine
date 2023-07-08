@@ -33,7 +33,8 @@
 							class="flex justify-center items-center p-4 w-full text-xs font-bold font-syne text-gray-900 dark:text-gray-100 hover:bg-primary hover:text-gray-100 border-l border-gray-900 dark:border-gray-100 first:border-l-0 cursor-ne-resize"
 							href={work.links[linkKey]}
 							target="_blank"
-						>
+							rel="noreferrer"
+							>
 							{linkKey}
 						</a>
 					{/each}

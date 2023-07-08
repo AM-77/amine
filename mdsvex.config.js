@@ -1,3 +1,6 @@
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypeSlug from 'rehype-slug'
+
 const config = {
   extensions: [".svelte.md", ".md", ".svx"],
 
@@ -6,7 +9,10 @@ const config = {
   },
 
   remarkPlugins: [],
-  rehypePlugins: [],
+  rehypePlugins: [
+    rehypeSlug,
+    rehypeAutolinkHeadings,
+  ],
 };
 
 export default config;
