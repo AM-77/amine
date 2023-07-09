@@ -1,7 +1,7 @@
 ---
 title: flat(depth) and flatMap(fn)
 date: '2023-06-23T13:50:13.284Z'
-description: 'How use flat(depth) and flatMap(fn) to Flatten Arrays in JavaScript'
+description: 'How to use flat(depth) and flatMap(fn) to Flatten Arrays in JavaScript'
 tags: 'JavaScript'
 ---
 ## What are `flat(depth)` and `flatMap(fn)`
