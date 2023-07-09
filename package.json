@@ -1,0 +1,21 @@
+{
+  "name": "amine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "build": "exec rm -v !('.gitignore'|'package.json'|'.nojekyll'|'CNAME'|'node_modules'|'build') && mv ./build/* . && rm -r ./build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AM-77/amine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AM-77/amine/issues"
+  },
+  "homepage": "https://github.com/AM-77/amine#readme"
+}
