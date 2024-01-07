@@ -1,8 +1,8 @@
 ---
 title: isNaN() vs Number.isNaN() in JavaScript
-date: '2023-06-26T13:50:13.284Z'
+date: '2024-01-07T14:24:13.284Z'
 description: 'What is the difference Between isNaN() and Number.isNaN()?'
-tags: 'NodeJS,NPM,Gitlab,JavaScript'
+tags: 'JavaScript'
 ---
 
 ## What is the global `NaN`  
