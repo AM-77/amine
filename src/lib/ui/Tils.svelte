@@ -24,11 +24,6 @@
 						</span>
 					{/each}
 				</div>
-				<div class="flex items-center border-l border-gray-900 dark:border-gray-100 pl-4">
-					<span class="text-xs font-syne font-semibold text-neutral-600 dark:text-neutral-200">
-						{new Date(til.date).toLocaleDateString('en-UK')}
-					</span>
-				</div>
 			</div>
 		</div>
 	{/each}
