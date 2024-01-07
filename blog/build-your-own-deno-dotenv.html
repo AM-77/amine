@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="title" content="Mohamed Amine Griche">
+		<meta name="description" content="Mohamed Amine Griche - Software engineer">
+		<meta name="keywords" content="Mohamed Amine Griche, Software engineer, JavaScript, TypeScript, Frontend, Developer">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<meta name="author" content="Mohamed Amine Griche">
+		<title>Mohamed Amine Griche</title>
+
+		
+		<link href="../_app/immutable/assets/0.e5682f18.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.c8733b93.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.fbbdd111.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.e42fa829.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.9be6de69.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.6e35cdc0.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.b2815314.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.ebbef51d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/dynamic-import-helper.be004503.js">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Share+Tech+Mono&family=Syne:wght@400;500&display=swap" rel="stylesheet"/>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<div><div class="flex w-screen h-screen justify-center overflow-y-scroll bg-gray-100 dark:bg-neutral-900"><div class="w-full max-w-5xl h-full"><div class="fixed top-0 w-full max-w-5xl"><div class="flex h-12 items-center backdrop-blur-md border-b border-x-0 lg:border-x border-gray-900 dark:border-gray-100"><div class="flex justify-center items-center w-12 h-12 border-r border-gray-900 dark:border-gray-100"><a href="/" class="flex justify-center items-center w-12 h-12 cursor-pointer hover:animate-pulse"><img src="/logo.svg" class="w-6 h-6" alt=""></a></div>
+
+	<div class="flex h-full gap-3 lg:gap-6 items-center ml-auto mr-auto lg:mr-4"><a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx" href="/">home
+
+	
+</a>
+		<a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx" href="/portfolio">portfolio
+
+	
+</a>
+		<a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx active" href="/blog">blog
+
+	<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="absolute top-1.5 -left-3 hidden lg:block svelte-l7mpdx active-icon active"><path d="M11.029 2.54a2 2 0 0 1 1.942 0l7 3.888A2 2 0 0 1 21 8.177v7.646a2 2 0 0 1-1.029 1.748l-7 3.89a2 2 0 0 1-1.942 0l-7-3.89A2 2 0 0 1 3 15.824V8.177a2 2 0 0 1 1.029-1.749l7-3.888z"></path></svg>
+</a>
+		<a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx" href="/til">til
+
+	
+</a>
+		<a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx" href="/contact">contact
+
+	
+</a></div>
+
+	<button class="w-12 h-12 border-l border-gray-900 dark:border-gray-100 cursor-pointer"><svg class="w-full h-full p-3 text-yellow-300 hover:animate-spin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3V2m0 20v-1m9-9h1M2 12h1m15.5-6.5L20 4M4 20l1.5-1.5M4 4l1.5 1.5m13 13L20 20"></path><circle cx="12" cy="12" r="4"></circle></svg></button></div></div>
+			<div class="min-h-[calc(100%-49px)] py-12"><article class="flex flex-col"><div class="flex justify-between items-center p-4 lg:p-12 flex-col lg:flex-row text-center lg:text-left"><h1 class="text-3xl font-syne font-semibold text-gray-900 dark:text-gray-100">Build Your Own deno-dotenv</h1>
+		<span class="text-sm font-syne text-neutral-600 dark:text-neutral-200">24/06/2020</span></div>
+	<div class="blog-post dark:blog-post-dark p-4 lg:p-12"><h1 id="what-is-the-node-dotenv-module-"><a aria-hidden="true" tabindex="-1" href="#what-is-the-node-dotenv-module-"><span class="icon icon-link"></span></a>What is the <code>node dotenv</code> module ?</h1>
+<blockquote><p>Dotenv is a zero-dependency module that loads environment variables from a <code>.env</code> file into <a href="https://nodejs.org/docs/latest/api/process.html#process_process_env" rel="nofollow"><code>process.env</code></a>. Storing configuration in the environment separate from code is based on <a href="http://12factor.net/config" rel="nofollow">The Twelve-Factor App</a> methodology.</p></blockquote>
+<p>for more information: check <a href="https://www.npmjs.com/package/dotenv" rel="nofollow">it’s page on npm</a> and <a href="https://github.com/motdotla/dotenv" rel="nofollow">it’s repository on github</a>.</p>
+<h1 id="what-is-a-env-file-"><a aria-hidden="true" tabindex="-1" href="#what-is-a-env-file-"><span class="icon icon-link"></span></a>what is a .env file ?</h1>
+<blockquote><p><code>.env</code> is the file that contains the environment variables you want to load to your application, each line of the .env file has this format <code>KEY=VALUE</code></p></blockquote>
+<p>example:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">HOST=https://www.example.com
+PORT=7700
+KEY=J46Sq8r4s5d9</code><!-- HTML_TAG_END --></pre>
+<p>that out of the way, let’s get started by defining the steps to create this module:</p>
+<h2 id="the-main-steps"><a aria-hidden="true" tabindex="-1" href="#the-main-steps"><span class="icon icon-link"></span></a>The main steps</h2>
+<p>These are the main steps to build this module:</p>
+<ol><li>Read the content from the <code>.env</code>.</li>
+<li>Parse the environment variables from the content.</li>
+<li>Set environment variables in <a href="https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts#Deno.env" rel="nofollow"><code>Deno.env</code></a>.</li></ol>
+<h3 id="1-read-the-content-from-the-env"><a aria-hidden="true" tabindex="-1" href="#1-read-the-content-from-the-env"><span class="icon icon-link"></span></a>1. Read the content from the <code>.env</code>:</h3>
+<p>Let’s start by creating the <code>mod.ts</code> file and add this function to it</p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token keyword">const</span> readFileToStrSync <span class="token operator">=</span> <span class="token punctuation">(</span>filePath<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">const</span> bytes <span class="token operator">=</span> Deno<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span>filePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> fileContent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TextDecoder</span><span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">decode</span><span class="token punctuation">(</span>bytes<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> fileContent<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p><em>NOTE:</em> You can name the file however you want, but as a best practice we are going to stick to <code>mod.ts</code></p>
+<p>What does this function do is:</p>
+<ul><li>Synchronously reads and returns the entire content of a file as an array of bytes. using the <a href="https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts#Deno.readFileSync" rel="nofollow"><code>Deno.readFileSync(filePath)</code></a> function.</li>
+<li>Convert the array of bytes to a string using the <a href="https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts#TextDecoder" rel="nofollow"><code>new TextDecoder(&quot;utf-8&quot;).decode(bytes)</code></a> method.</li>
+<li>return the content of the file a string.</li></ul>
+<p>Now that we have the <code>.env</code> file content let’s parse the environment variables in it.</p>
+<h3 id="2-parse-the-environment-variables"><a aria-hidden="true" tabindex="-1" href="#2-parse-the-environment-variables"><span class="icon icon-link"></span></a>2. Parse the environment variables:</h3>
+<p>To do that let’s add the <code>parse</code> function to the <code>mod.ts</code> file</p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token keyword">const</span> <span class="token constant">LINE_BREAK</span><span class="token operator">:</span> RegExp <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">&#92;r&#92;n?|&#92;n</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> parse <span class="token operator">=</span> <span class="token punctuation">(</span>envContent<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">const</span> envList <span class="token operator">=</span> envContent<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token constant">LINE_BREAK</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">let</span> parsedContent<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> envList<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+		parsedContent<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>envList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'='</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token keyword">return</span> parsedContent<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p>what does this code do is:</p>
+<ul><li>The <code>LINE_BREAK</code> is a regular expression that matches the line break.</li>
+<li>The <code>parse</code> function takes the content of the <code>.env</code> file as a parameter of type string ( the string returned from the previous function <code>readFileStrSync</code> ), split the content into separate lines ( because each line contain one environment variable with the structure <code>KEY=VALUE</code> ) using the <code>split</code> function with <code>LINE_BREAK</code> RegExp as a parameter, then loop throw all the lines and retrieve the <code>KEY</code> and the <code>VALUE</code> in a form of an array of strings <code>[KEY, VALUE]</code> and push it to the two-dimensional array <code>parsedContent</code> which will be returned when the loop is completed.</li></ul>
+<p>Now we have the environment variables in a form of a two-dimensional array, all we have left to do is to set it to the <a href="https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts#Deno.env" rel="nofollow"><code>Deno.env</code></a> so it will be accessible in all the application.</p>
+<h3 id="3-set-the-environment-variables-in-denoenv"><a aria-hidden="true" tabindex="-1" href="#3-set-the-environment-variables-in-denoenv"><span class="icon icon-link"></span></a>3. Set the environment variables in <a href="https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts#Deno.env" rel="nofollow"><code>Deno.env</code></a>:</h3>
+<p>Now, let’s add the <code>setEnv</code> function to the <code>mod.ts</code> file</p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token keyword">const</span> setEnv <span class="token operator">=</span> <span class="token punctuation">(</span>parsedEnv<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> parsedEnv<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+		Deno<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>parsedEnv<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> parsedEnv<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p>This function takes the environment variables in a form of a two-dimensional array ( returned from the <code>parse</code> function ) and add them to the <code>Deno.env</code> object with the <code>Deno.env.set()</code> function.</p>
+<p>Now we have all the functions we need created, but they are not doing anything yet, they have to collaborate with each other to provide the functionality we are looking for. So let’s just create a function to do that let’s give a name of <code>dotenv</code></p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token keyword">const</span> <span class="token function-variable function">dotenv</span> <span class="token operator">=</span> <span class="token punctuation">(</span>envFilePath<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">const</span> filePath<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">=</span> envFilePath <span class="token operator">||</span> <span class="token string">'.env'</span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> fileContent <span class="token operator">=</span> <span class="token function">readFileToStrSync</span><span class="token punctuation">(</span>filePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> parsedEnv <span class="token operator">=</span> <span class="token function">parse</span><span class="token punctuation">(</span>fileContent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">setEnv</span><span class="token punctuation">(</span>parsedEnv<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p>This function take an optional parameter <code>envFilePath</code> which is the path to the <code>.env</code> file ( if it’s provided the function will use it, if not the function will use ‘.env’ as a path value ), then using this path <code>filePath</code> to read the content of the <code>.env</code> file synchronously using the <code>readFileToStrSync(filePath)</code>, then parse the result using the <code>parse(fileContent)</code> function, then uses the parsed result in the <code>setEnv(parsedEnv)</code> function to set the environment variables in the <code>Deno.env</code> object.</p>
+<h3 id="4-finally-export"><a aria-hidden="true" tabindex="-1" href="#4-finally-export"><span class="icon icon-link"></span></a>4. Finally <code>export</code></h3>
+<p>Now that we have the functionality create and ready, we need just to export the <code>dotenv</code> function so the users can use it in their apps.</p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">default</span> dotenv<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<h1 id="lets-test-the-module"><a aria-hidden="true" tabindex="-1" href="#lets-test-the-module"><span class="icon icon-link"></span></a>Let’s test the module</h1>
+<p>First create a <code>.env</code> file and add some <code>KEY=VALUE</code> pairs, something like:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">PASSWORD=1234567
+KEY=12T1S654Ts6sc5fsd4Q6np9dx2A</code><!-- HTML_TAG_END --></pre>
+<p>Then create a typescript file, call it <code>test.ts</code> or however you want, import the <code>dotenv</code> function from the <code>dotenv</code> module we just created, and execute it, so that the environment variables will be available to use from the <code>Deno.env</code> object</p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token keyword">import</span> dotenv <span class="token keyword">from</span> <span class="token string">'./mod.ts'</span><span class="token punctuation">;</span>
+<span class="token comment">// or you can use import  if from this URL</span>
+<span class="token comment">// import dotenv from "https://raw.githubusercontent.com/AM-77/deno-dotenv/master/mod.ts"</span>
+<span class="token function">dotenv</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p>now create a snapshot of the environment variables from the <code>Deno.env</code> using the <code>Deno.env.toObject()</code> function and just use it:</p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token keyword">const</span> env <span class="token operator">=</span> Deno<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token function">toObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'PASSWORD: '</span><span class="token punctuation">,</span> env<span class="token punctuation">.</span><span class="token constant">PASSWORD</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'KEY: '</span><span class="token punctuation">,</span> env<span class="token punctuation">.</span><span class="token constant">KEY</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p>Run your <code>test.ts</code> using the flags <code>--allow-read</code> <code>--allow-env</code></p>
+<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash">$ deno run --allow-read --allow-env test.ts
+PASSWORD: <span class="token number">1234567</span>
+KEY: 12T1S654Ts6sc5fsd4Q6np9dx2A</code><!-- HTML_TAG_END --></pre>
+<p>And that’s all, we are finished. Thank you.</p>
+<p>Here is <a href="https://github.com/AM-77/deno-dotenv" rel="nofollow">the source code</a> (I re-factored it a little bit).</p></div></article></div>
+			<div class="fixed bottom-0 w-full max-w-5xl"><div class="flex items-center backdrop-blur-md justify-between h-12 border-t border-x-0 lg:border-x border-gray-900 dark:border-gray-100"><div class="flex"><a class="icon dark:border-gray-100 dark:text-gray-100 svelte-v3mbcg" href="https://github.com/AM-77"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><g clip-path="url(#clip0_100_4)"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></g></svg></a>
+
+		<a class="icon dark:border-gray-100 dark:fill-gray-100 svelte-v3mbcg" href="https://gitlab.com/amine-griche"><svg width="24px" height="24px" viewBox="-2 -2.5 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10.006 18.443L6.326 7.118h7.36l-3.68 11.325zm0 0L1.168 7.118h5.158l3.68 11.325zM1.168 7.118l8.838 11.325-9.68-7.032a.762.762 0 0 1-.276-.852l1.118-3.441zm0 0L3.385.296a.38.38 0 0 1 .724 0l2.217 6.822H1.168zm8.838 11.325l3.68-11.325h5.157l-8.837 11.325zm8.837-11.325l1.119 3.441a.762.762 0 0 1-.277.852l-9.68 7.032 8.838-11.325zm0 0h-5.157L15.902.296a.38.38 0 0 1 .725 0l2.216 6.822z"></path></svg></a>
+
+		<a class="icon dark:border-gray-100 dark:text-gray-100 w-6 h-6 svelte-v3mbcg" href="https://www.linkedin.com/in/mohamed-amine-griche"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161V2.838zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634 3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388zm-5.5 10.403h3.208V9.25H4.208v10.54zM7.875 5.812a2.063 2.063 0 1 1-4.125 0 2.063 2.063 0 0 1 4.125 0z"></path></svg></a>
+
+		<a class="icon dark:border-gray-100 dark:text-gray-100 svelte-v3mbcg" href="https://codepen.io/am-77"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.372.19c.38-.253.875-.253 1.256 0L23.492 7.4c.317.21.508.565.508.946v7.308c0 .38-.19.736-.508.947l-10.864 7.21c-.38.252-.875.252-1.256 0L.508 16.6A1.136 1.136 0 0 1 0 15.654V8.346c0-.38.19-.736.508-.947L11.372.19zm-9.1 10.273v3.058l2.288-1.54-2.288-1.518zm4.337 2.878L3.18 15.648l7.684 5.1v-4.583L6.61 13.341zm6.527 2.824v4.582l7.684-5.1-3.43-2.306-4.254 2.824zm6.303-4.183l2.29 1.54v-3.06l-2.29 1.52zm1.371-3.636l-3.41 2.263-4.264-2.868V3.253l7.674 5.093zm-9.946-5.093V7.74l-4.263 2.868L3.19 8.346l7.674-5.093zM12 9.715l-3.35 2.254L12 14.192l3.35-2.223L12 9.715z"></path></svg></a>
+
+		<a class="icon dark:border-gray-100 dark:text-gray-100 svelte-v3mbcg" href="https://stackoverflow.com/users/10564525"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><path d="M18.372 20.222v-5.358h1.79V22H4v-7.136h1.79v5.358h12.582z"></path><path d="M7.768 14.356l8.79 1.824.372-1.755L8.14 12.6l-.372 1.756zm1.162-4.157l8.14 3.764.744-1.617-8.14-3.787-.744 1.64zm2.256-3.973l6.907 5.705 1.14-1.363-6.907-5.704-1.14 1.362zM15.651 2L14.21 3.062l5.35 7.16L21 9.159 15.651 2zm-8.07 16.42h8.977v-1.778H7.581v1.778z"></path></svg></a></div>
+
+	<div class="flex items-center justify-center px-4 h-12 border-l border-gray-900 dark:border-gray-100"><span class="text-xs text-gray-900 dark:text-gray-100 font-syne font-medium capitalize">© 2024 amine griche
+		</span></div>
+</div></div></div></div></div>
+
+
+			
+			<script>
+				{
+					__sveltekit_1q9lvlg = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.c8733b93.js"),
+						import("../_app/immutable/entry/app.9be6de69.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
