@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="title" content="Mohamed Amine Griche">
+		<meta name="description" content="Mohamed Amine Griche - Software engineer">
+		<meta name="keywords" content="Mohamed Amine Griche, Software engineer, JavaScript, TypeScript, Frontend, Developer">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<meta name="author" content="Mohamed Amine Griche">
+		<title>Mohamed Amine Griche</title>
+
+		
+		<link href="../_app/immutable/assets/0.e5682f18.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.106290c1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.fbbdd111.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.b0f04f7a.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.c832bd16.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.03d1042d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.9e63b621.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/8.7c20de0c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/dynamic-import-helper.be004503.js">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Share+Tech+Mono&family=Syne:wght@400;500&display=swap" rel="stylesheet"/>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<div><div class="flex w-screen h-screen justify-center overflow-y-scroll bg-gray-100 dark:bg-neutral-900"><div class="w-full max-w-5xl h-full"><div class="fixed top-0 w-full max-w-5xl"><div class="flex h-12 items-center backdrop-blur-md border-b border-x-0 lg:border-x border-gray-900 dark:border-gray-100"><div class="flex justify-center items-center w-12 h-12 border-r border-gray-900 dark:border-gray-100"><a href="/" class="flex justify-center items-center w-12 h-12 cursor-pointer hover:animate-pulse"><img src="/logo.svg" class="w-6 h-6" alt=""></a></div>
+
+	<div class="flex h-full gap-3 lg:gap-6 items-center ml-auto mr-auto lg:mr-4"><a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx" href="/">home
+
+	
+</a>
+		<a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx" href="/portfolio">portfolio
+
+	
+</a>
+		<a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx" href="/blog">blog
+
+	
+</a>
+		<a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx active" href="/til">til
+
+	<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="absolute top-1.5 -left-3 hidden lg:block svelte-l7mpdx active-icon active"><path d="M11.029 2.54a2 2 0 0 1 1.942 0l7 3.888A2 2 0 0 1 21 8.177v7.646a2 2 0 0 1-1.029 1.748l-7 3.89a2 2 0 0 1-1.942 0l-7-3.89A2 2 0 0 1 3 15.824V8.177a2 2 0 0 1 1.029-1.749l7-3.888z"></path></svg>
+</a>
+		<a class="link text-gray-900 dark:text-gray-100 svelte-l7mpdx" href="/contact">contact
+
+	
+</a></div>
+
+	<button class="w-12 h-12 border-l border-gray-900 dark:border-gray-100 cursor-pointer"><svg class="w-full h-full p-3 text-yellow-300 hover:animate-spin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3V2m0 20v-1m9-9h1M2 12h1m15.5-6.5L20 4M4 20l1.5-1.5M4 4l1.5 1.5m13 13L20 20"></path><circle cx="12" cy="12" r="4"></circle></svg></button></div></div>
+			<div class="min-h-[calc(100%-49px)] py-12"><article class="flex flex-col"><div class="flex justify-between items-center p-4 lg:p-12 flex-col lg:flex-row text-center lg:text-left"><h1 class="text-3xl font-syne font-semibold text-gray-900 dark:text-gray-100">Read and write searchParams in NextJS 13</h1></div>
+	<div class="blog-post dark:blog-post-dark p-4 lg:p-12"><h2 id="read-searchparams"><a aria-hidden="true" tabindex="-1" href="#read-searchparams"><span class="icon icon-link"></span></a>Read searchParams</h2>
+<ul><li>Client Side</li></ul>
+<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token string">'use client'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> useSearchParams <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'next/navigation'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">MyComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">const</span> searchParams <span class="token operator">=</span> <span class="token function">useSearchParams</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">const</span> a <span class="token operator">=</span> searchParams<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> b <span class="token operator">=</span> searchParams<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'b'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">return</span> <span class="token punctuation">(</span>
+		<span class="token operator">&lt;</span><span class="token operator">></span>
+			Search Params<span class="token operator">:</span> a<span class="token operator">:</span> <span class="token punctuation">&#123;</span>a<span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>b<span class="token punctuation">&#125;</span>
+		<span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">></span>
+	<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<ul><li>Server Side</li></ul>
+<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">MyPage</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">const</span> <span class="token punctuation">&#123;</span>
+		<span class="token literal-property property">searchParams</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span> a<span class="token punctuation">,</span> b <span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span> <span class="token operator">=</span> props<span class="token punctuation">;</span>
+
+	<span class="token keyword">return</span> <span class="token punctuation">(</span>
+		<span class="token operator">&lt;</span><span class="token operator">></span>
+			Search Params<span class="token operator">:</span> a<span class="token operator">:</span> <span class="token punctuation">&#123;</span>a<span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>b<span class="token punctuation">&#125;</span>
+		<span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">></span>
+	<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> MyPage<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<h2 id="write-searchparams"><a aria-hidden="true" tabindex="-1" href="#write-searchparams"><span class="icon icon-link"></span></a>Write searchParams</h2>
+<ul><li>Client Side</li></ul>
+<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token string">'use client'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> useSearchParams<span class="token punctuation">,</span> usePathname<span class="token punctuation">,</span> useRouter <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'next/navigation'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">MyComponent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">const</span> searchParams <span class="token operator">=</span> <span class="token function">useSearchParams</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> pathname <span class="token operator">=</span> <span class="token function">usePathname</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">useRouter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">const</span> <span class="token function-variable function">onClick</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+		<span class="token keyword">const</span> params <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URLSearchParams</span><span class="token punctuation">(</span>searchParams<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		params<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'a_value'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		params<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'b_value'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>pathname<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">?</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>params<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">return</span> <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">&#123;</span>onClick<span class="token punctuation">&#125;</span><span class="token operator">></span>Click Here<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> MyComponent<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<ul><li>Server Side</li></ul>
+<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> Link <span class="token keyword">from</span> <span class="token string">'next/link'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">MyPage</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">return</span> <span class="token operator">&lt;</span>Link href<span class="token operator">=</span><span class="token string">"/?a=a_value&amp;b=b_value"</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> MyPage<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre></div></article></div>
+			<div class="fixed bottom-0 w-full max-w-5xl"><div class="flex items-center backdrop-blur-md justify-between h-12 border-t border-x-0 lg:border-x border-gray-900 dark:border-gray-100"><div class="flex"><a class="icon dark:border-gray-100 dark:text-gray-100 svelte-v3mbcg" href="https://github.com/AM-77"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><g clip-path="url(#clip0_100_4)"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></g></svg></a>
+
+		<a class="icon dark:border-gray-100 dark:fill-gray-100 svelte-v3mbcg" href="https://gitlab.com/amine-griche"><svg width="24px" height="24px" viewBox="-2 -2.5 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10.006 18.443L6.326 7.118h7.36l-3.68 11.325zm0 0L1.168 7.118h5.158l3.68 11.325zM1.168 7.118l8.838 11.325-9.68-7.032a.762.762 0 0 1-.276-.852l1.118-3.441zm0 0L3.385.296a.38.38 0 0 1 .724 0l2.217 6.822H1.168zm8.838 11.325l3.68-11.325h5.157l-8.837 11.325zm8.837-11.325l1.119 3.441a.762.762 0 0 1-.277.852l-9.68 7.032 8.838-11.325zm0 0h-5.157L15.902.296a.38.38 0 0 1 .725 0l2.216 6.822z"></path></svg></a>
+
+		<a class="icon dark:border-gray-100 dark:text-gray-100 w-6 h-6 svelte-v3mbcg" href="https://www.linkedin.com/in/mohamed-amine-griche"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161V2.838zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634 3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388zm-5.5 10.403h3.208V9.25H4.208v10.54zM7.875 5.812a2.063 2.063 0 1 1-4.125 0 2.063 2.063 0 0 1 4.125 0z"></path></svg></a>
+
+		<a class="icon dark:border-gray-100 dark:text-gray-100 svelte-v3mbcg" href="https://codepen.io/am-77"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.372.19c.38-.253.875-.253 1.256 0L23.492 7.4c.317.21.508.565.508.946v7.308c0 .38-.19.736-.508.947l-10.864 7.21c-.38.252-.875.252-1.256 0L.508 16.6A1.136 1.136 0 0 1 0 15.654V8.346c0-.38.19-.736.508-.947L11.372.19zm-9.1 10.273v3.058l2.288-1.54-2.288-1.518zm4.337 2.878L3.18 15.648l7.684 5.1v-4.583L6.61 13.341zm6.527 2.824v4.582l7.684-5.1-3.43-2.306-4.254 2.824zm6.303-4.183l2.29 1.54v-3.06l-2.29 1.52zm1.371-3.636l-3.41 2.263-4.264-2.868V3.253l7.674 5.093zm-9.946-5.093V7.74l-4.263 2.868L3.19 8.346l7.674-5.093zM12 9.715l-3.35 2.254L12 14.192l3.35-2.223L12 9.715z"></path></svg></a>
+
+		<a class="icon dark:border-gray-100 dark:text-gray-100 svelte-v3mbcg" href="https://stackoverflow.com/users/10564525"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><path d="M18.372 20.222v-5.358h1.79V22H4v-7.136h1.79v5.358h12.582z"></path><path d="M7.768 14.356l8.79 1.824.372-1.755L8.14 12.6l-.372 1.756zm1.162-4.157l8.14 3.764.744-1.617-8.14-3.787-.744 1.64zm2.256-3.973l6.907 5.705 1.14-1.363-6.907-5.704-1.14 1.362zM15.651 2L14.21 3.062l5.35 7.16L21 9.159 15.651 2zm-8.07 16.42h8.977v-1.778H7.581v1.778z"></path></svg></a></div>
+
+	<div class="flex items-center justify-center px-4 h-12 border-l border-gray-900 dark:border-gray-100"><span class="text-xs text-gray-900 dark:text-gray-100 font-syne font-medium capitalize">© 2024 amine griche
+		</span></div>
+</div></div></div></div></div>
+
+
+			
+			<script>
+				{
+					__sveltekit_x0zr4n = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.106290c1.js"),
+						import("../_app/immutable/entry/app.c832bd16.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 8],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
