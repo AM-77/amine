@@ -57,43 +57,9 @@
 </a></div>
 
 	<button class="w-12 h-12 border-l border-gray-900 dark:border-gray-100 cursor-pointer"><svg class="w-full h-full p-3 text-yellow-300 hover:animate-spin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3V2m0 20v-1m9-9h1M2 12h1m15.5-6.5L20 4M4 20l1.5-1.5M4 4l1.5 1.5m13 13L20 20"></path><circle cx="12" cy="12" r="4"></circle></svg></button></div></div>
-			<div class="min-h-[calc(100%-49px)] py-12"><article class="flex flex-col"><div class="flex justify-between items-center p-4 lg:p-12 flex-col lg:flex-row text-center lg:text-left"><h1 class="text-3xl font-syne font-semibold text-gray-900 dark:text-gray-100">Read and write searchParams in NextJS 13</h1></div>
-	<div class="blog-post dark:blog-post-dark p-4 lg:p-12"><h2 id="read-searchparams"><a aria-hidden="true" tabindex="-1" href="#read-searchparams"><span class="icon icon-link"></span></a>Read searchParams</h2>
-<ul><li>Client Side</li></ul>
-<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token string">'use client'</span><span class="token punctuation">;</span>
-
-<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> useSearchParams <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'next/navigation'</span><span class="token punctuation">;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">MyComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-	<span class="token keyword">const</span> searchParams <span class="token operator">=</span> <span class="token function">useSearchParams</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-	<span class="token keyword">const</span> a <span class="token operator">=</span> searchParams<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token keyword">const</span> b <span class="token operator">=</span> searchParams<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'b'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-	<span class="token keyword">return</span> <span class="token punctuation">(</span>
-		<span class="token operator">&lt;</span><span class="token operator">></span>
-			Search Params<span class="token operator">:</span> a<span class="token operator">:</span> <span class="token punctuation">&#123;</span>a<span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>b<span class="token punctuation">&#125;</span>
-		<span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">></span>
-	<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<ul><li>Server Side</li></ul>
-<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
-
-<span class="token keyword">const</span> <span class="token function-variable function">MyPage</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-	<span class="token keyword">const</span> <span class="token punctuation">&#123;</span>
-		<span class="token literal-property property">searchParams</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span> a<span class="token punctuation">,</span> b <span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span> <span class="token operator">=</span> props<span class="token punctuation">;</span>
-
-	<span class="token keyword">return</span> <span class="token punctuation">(</span>
-		<span class="token operator">&lt;</span><span class="token operator">></span>
-			Search Params<span class="token operator">:</span> a<span class="token operator">:</span> <span class="token punctuation">&#123;</span>a<span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>b<span class="token punctuation">&#125;</span>
-		<span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">></span>
-	<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> MyPage<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
-<h2 id="write-searchparams"><a aria-hidden="true" tabindex="-1" href="#write-searchparams"><span class="icon icon-link"></span></a>Write searchParams</h2>
-<ul><li>Client Side</li></ul>
+			<div class="min-h-[calc(100%-49px)] py-12"><article class="flex flex-col"><div class="flex justify-between items-center p-4 lg:p-12 flex-col lg:flex-row text-center lg:text-left"><h1 class="text-3xl font-syne font-semibold text-gray-900 dark:text-gray-100">Access the URL in NextJS 13</h1></div>
+	<div class="blog-post dark:blog-post-dark p-4 lg:p-12"><h2 id="client-side"><a aria-hidden="true" tabindex="-1" href="#client-side"><span class="icon icon-link"></span></a>Client Side</h2>
+<p>this is strightforward, you can just access the <code>window.location.href</code> or using the hooks</p>
 <pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token string">'use client'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
 
@@ -104,28 +70,37 @@
 	<span class="token keyword">const</span> pathname <span class="token operator">=</span> <span class="token function">usePathname</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">useRouter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-	<span class="token keyword">const</span> <span class="token function-variable function">onClick</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-		<span class="token keyword">const</span> params <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URLSearchParams</span><span class="token punctuation">(</span>searchParams<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		params<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'a_value'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		params<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'b_value'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	React<span class="token punctuation">.</span><span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> <span class="token literal-property property">url</span><span class="token operator">:</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-		router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>pathname<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">?</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>params<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-
-	<span class="token keyword">return</span> <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">&#123;</span>onClick<span class="token punctuation">&#125;</span><span class="token operator">></span>Click Here<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token operator">&lt;</span>p<span class="token operator">></span>Client Side<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> MyComponent<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
-<ul><li>Server Side</li></ul>
+<h2 id="server-side"><a aria-hidden="true" tabindex="-1" href="#server-side"><span class="icon icon-link"></span></a>Server Side</h2>
+<p>for the server side is a bit tickier, as there is no strightforward way to access the url, instead you need to set the url into the headers, than you retieve it from the headers when you want to use it.</p>
+<p>in the <code>middleware.js</code>, you set the url to the headers</p>
+<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> NextResponse <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'next/server'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">middleware</span><span class="token punctuation">(</span><span class="token parameter">request</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">const</span> headers <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Headers</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>headers<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	headers<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'x-url'</span><span class="token punctuation">,</span> request<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">return</span> NextResponse<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> headers <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<p>in the component:</p>
 <pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> headers <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'next/headers'</span><span class="token punctuation">;</span>
 
-<span class="token keyword">import</span> Link <span class="token keyword">from</span> <span class="token string">'next/link'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">MyComponent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">const</span> headersList <span class="token operator">=</span> <span class="token function">headers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> xurl <span class="token operator">=</span> headersList<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'x-url'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-<span class="token keyword">const</span> <span class="token function-variable function">MyPage</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-	<span class="token keyword">return</span> <span class="token operator">&lt;</span>Link href<span class="token operator">=</span><span class="token string">"/?a=a_value&amp;b=b_value"</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token operator">&lt;</span>p<span class="token operator">></span>Server Side<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 
-<span class="token keyword">export</span> <span class="token keyword">default</span> MyPage<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre></div></article></div>
+<span class="token keyword">export</span> <span class="token keyword">default</span> MyComponent<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre></div></article></div>
 			<div class="fixed bottom-0 w-full max-w-5xl"><div class="flex items-center backdrop-blur-md justify-between h-12 border-t border-x-0 lg:border-x border-gray-900 dark:border-gray-100"><div class="flex"><a class="icon dark:border-gray-100 dark:text-gray-100 svelte-v3mbcg" href="https://github.com/AM-77"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke-width="2"><g clip-path="url(#clip0_100_4)"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></g></svg></a>
 
 		<a class="icon dark:border-gray-100 dark:fill-gray-100 svelte-v3mbcg" href="https://gitlab.com/amine-griche"><svg width="24px" height="24px" viewBox="-2 -2.5 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10.006 18.443L6.326 7.118h7.36l-3.68 11.325zm0 0L1.168 7.118h5.158l3.68 11.325zM1.168 7.118l8.838 11.325-9.68-7.032a.762.762 0 0 1-.276-.852l1.118-3.441zm0 0L3.385.296a.38.38 0 0 1 .724 0l2.217 6.822H1.168zm8.838 11.325l3.68-11.325h5.157l-8.837 11.325zm8.837-11.325l1.119 3.441a.762.762 0 0 1-.277.852l-9.68 7.032 8.838-11.325zm0 0h-5.157L15.902.296a.38.38 0 0 1 .725 0l2.216 6.822z"></path></svg></a>
