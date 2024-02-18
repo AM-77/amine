@@ -1,10 +1,10 @@
-<script>
-	export let tils;
+<script lang="ts">
+	export let tils: any[];
 </script>
 
 <div class="flex flex-col gap-5">
 	{#each tils as til}
-		<div class="relative flex flex-col gap-3 border border-gray-900 dark:border-gray-100">
+		<div class="flex flex-col gap-3 border border-gray-900 dark:border-gray-100">
 			<div class="flex flex-col gap-2 p-4">
 				<a
 					href={`/til/${til.slug}`}

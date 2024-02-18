@@ -1,10 +1,10 @@
-<script>
-	export let posts;
+<script lang="ts">
+	export let posts: any[];
 </script>
 
 <div class="flex flex-col gap-5">
 	{#each posts as post}
-		<div class="relative flex flex-col gap-3 border border-gray-900 dark:border-gray-100">
+		<div class="flex flex-col gap-3 border border-gray-900 dark:border-gray-100">
 			<div class="flex flex-col gap-2 p-4">
 				<a
 					href={`/blog/${post.slug}`}

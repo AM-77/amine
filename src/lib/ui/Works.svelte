@@ -1,15 +1,13 @@
 <script lang="ts">
 	export let title: string;
-	export let works: any;
+	export let works: any[];
 </script>
 
 <div class="flex flex-col w-full gap-2">
 	<h2 class="underline text-lg font-syne font-medium text-gray-900 dark:text-gray-100">{title}</h2>
 	<div class="flex w-full flex-wrap border-r border-b border-gray-900 dark:border-gray-100">
 		{#each works as work}
-			<div
-				class="flex flex-col w-full lg:w-1/3 border-t border-l border-gray-900 dark:border-gray-100"
-			>
+			<div class="flex flex-col w-full border-t border-l border-gray-900 dark:border-gray-100">
 				<div class="flex flex-col p-4 gap-4 border-gray-900 dark:border-gray-100">
 					<h3 class="text-lg font-syne font-medium text-gray-900 dark:text-gray-100">
 						{work.title}
@@ -34,7 +32,7 @@
 							href={work.links[linkKey]}
 							target="_blank"
 							rel="noreferrer"
-							>
+						>
 							{linkKey}
 						</a>
 					{/each}
