@@ -17,6 +17,6 @@
 	</div>
 
 	<Works title="Work" {works} />
-	<Works title="Websites" works={apps} />
-	<Works title="libraries/tools" works={tools} />
+	<!-- <Works title="Websites" works={apps} /> -->
+	<!-- <Works title="libraries/tools" works={tools} /> -->
 </div>
